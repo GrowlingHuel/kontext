@@ -1,9 +1,10 @@
 package com.kontext.data.local
 
 import android.content.Context
-import com.kontext.domain.model.StoryDefinition
-import com.kontext.domain.model.UserGender
+import com.kontext.domain.model.StoryLevel
+import com.kontext.domain.model.StoryChoice
 import org.json.JSONArray
+import org.json.JSONObject
 import java.io.IOException
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -11,58 +12,49 @@ import javax.inject.Singleton
 @Singleton
 class StoryLoader @Inject constructor() {
 
-    fun getStories(context: Context, userGender: UserGender, userName: String): List<StoryDefinition> {
+    fun loadStories(context: Context): List<StoryLevel> {
         val jsonString = loadJSONFromAsset(context, "stories.json") ?: return emptyList()
-        val stories = mutableListOf<StoryDefinition>()
+        val stories = mutableListOf<StoryLevel>()
 
         try {
             val jsonArray = JSONArray(jsonString)
             for (i in 0 until jsonArray.length()) {
                 val item = jsonArray.getJSONObject(i)
-                val batchId = item.getInt("batch_id")
+                val level = item.optInt("level", -1)
                 
-                // Parse Target Words
-                val wordsArray = item.optJSONArray("target_words")
-                val targetWords = mutableListOf<String>()
-                if (wordsArray != null) {
-                    for (j in 0 until wordsArray.length()) {
-                        targetWords.add(wordsArray.getString(j))
-                    }
-                }
+                if (level != -1) {
+                    val choiceA = parseChoice(item.optJSONObject("choice_a") ?: JSONObject())
+                    val choiceB = parseChoice(item.optJSONObject("choice_b") ?: JSONObject())
 
-                // Select Story Version based on Gender
-                val storyKey = if (userGender == UserGender.MALE) "story_M" else "story_F"
-                val storyObj = item.optJSONObject(storyKey)
-
-                if (storyObj != null) {
-                    var rawDe = storyObj.optString("de", "")
-                    var rawEn = storyObj.optString("en", "")
-
-                    // Replace {{HERO}} with userName
-                    val cleanName = if (userName.isBlank()) "Hero" else userName
-                    
-                    val finalDe = rawDe.replace("{{HERO}}", cleanName)
-                    val finalEn = rawEn.replace("{{HERO}}", cleanName)
-
-                    // Image Path (referencing asset)
-                    val imagePath = "file:///android_asset/story_$batchId.jpg"
-
-                    stories.add(
-                        StoryDefinition(
-                            id = batchId,
-                            targetWords = targetWords,
-                            imagePath = imagePath,
-                            germanText = finalDe,
-                            englishText = finalEn
-                        )
-                    )
+                    stories.add(StoryLevel(level, choiceA, choiceB))
                 }
             }
         } catch (e: Exception) {
+            android.util.Log.e("StoryLoader", "Failed to parse JSON: ${e.message}", e)
             e.printStackTrace()
         }
 
         return stories
+    }
+
+    private fun parseChoice(json: JSONObject): StoryChoice {
+        return StoryChoice(
+            prompt = json.optString("prompt", ""),
+            sentencesM = jsonArrayToList(json.optJSONArray("sentences_m")),
+            sentencesF = jsonArrayToList(json.optJSONArray("sentences_f")),
+            sentencesEn = jsonArrayToList(json.optJSONArray("en_sentences")),
+            imagePrompt = json.optString("image_prompt", "")
+        )
+    }
+
+    private fun jsonArrayToList(array: JSONArray?): List<String> {
+        val list = mutableListOf<String>()
+        if (array != null) {
+            for (i in 0 until array.length()) {
+                list.add(array.getString(i))
+            }
+        }
+        return list
     }
 
     private fun loadJSONFromAsset(context: Context, fileName: String): String? {

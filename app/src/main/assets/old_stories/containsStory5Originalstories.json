@@ -226,5 +226,65 @@
       ],
       "image_prompt": "Magritte style image prompt: Our hero stands before a classical, grey stone statue of an old man on the Marktplatz under clear daylight. The statue's mouth is slightly ajar, as if mid-whisper, and its stone eyes hold a strange, knowing glint. Sunlight highlights the intricate details of the statue and the everyday life around it. The traveler looks at the statue with a mixture of curiosity and unease."
     }
+  },
+  {
+    "level": 5,
+    "target_words": [
+      "dann",
+      "wenn",
+      "müssen",
+      "um",
+      "ja",
+      "kein",
+      "über",
+      "da",
+      "geben",
+      "vor"
+    ],
+    "legacy_words": [
+      "wie",
+      "es",
+      "zu",
+      "haben",
+      "sich"
+    ],
+    "choice_a": {
+      "prompt": "Dem flüsternden Koffer folgen",
+      "sentences_m": [
+        "Die Anzeigetafel gibt keine erkennbaren Reiseziele an, doch dann beginnt ein kleiner, lederner Koffer, {{HERO}} Anweisungen zuzuflüstern.",
+        "Er drängt {{HERO}}, dass er ihm folgen muss, da es sonst keinen anderen Weg gibt, diesen widerhallenden Hauptbahnhof zu verlassen, um zum Gohliser Schlösschen zu gelangen.",
+        "Ja, es verspricht {{HERO}}, dass er sich dort, über den Menschenmengen, genauso wie er ist, vor den Toren des Schlosses wiederfinden wird."
+      ],
+      "sentences_f": [
+        "Die Anzeigetafel gibt keine erkennbaren Reiseziele an, doch dann beginnt ein kleiner, lederner Koffer, {{HERO}} Anweisungen zuzuflüstern.",
+        "Er drängt {{HERO}}, dass sie ihm folgen muss, da es sonst keinen anderen Weg gibt, diesen widerhallenden Hauptbahnhof zu verlassen, um zum Gohliser Schlösschen zu gelangen.",
+        "Ja, es verspricht {{HERO}}, dass sie sich dort, über den Menschenmengen, genauso wie sie ist, vor den Toren des Schlosses wiederfinden wird."
+      ],
+      "en_sentences": [
+        "The departure board shows no recognizable destinations, but then a small, leather suitcase begins to whisper instructions to {{HERO}}.",
+        "It urges {{HERO}} that they must follow it, as there is no other way to leave this echoing Hauptbahnhof, in order to get to Gohliser Schlösschen.",
+        "Yes, it promises {{HERO}} that they will find themselves there, above the crowds, exactly as they are, before the gates of the castle."
+      ],
+      "image_prompt": "Magritte style, clear daylight, sharp focus. A grand, bustling train station (Hauptbahnhof). An ordinary, leather suitcase on the floor, subtly glowing and whispering, with an ungendered traveler (our hero) bending slightly to listen. No darkness or mist. People in the background are normal, but slightly blurred."
+    },
+    "choice_b": {
+      "prompt": "Einen Weg durch die Menschenmauer suchen",
+      "sentences_m": [
+        "Die Menschenmenge um {{HERO}} ist so dicht, dass sie eine lebende Mauer aus Gesichtern bildet, die ihn dann langsam zu einem unbekannten Ausgang schiebt.",
+        "Ja, wenn {{HERO}} passieren möchte, muss er einen Weg durch diese Mauer finden, da es kein Aufgeben gibt, denn sie bewegt sich, als habe sie ihren eigenen Willen und zieht ihn mit sich.",
+        "Plötzlich tut sich eine Lücke direkt vor ihm auf, und {{HERO}} sieht wie durch ein Fenster einen kleinen grünen Park, der zum Gohliser Schlösschen zu führen scheint, über alle Hindernisse hinweg."
+      ],
+      "sentences_f": [
+        "Die Menschenmenge um {{HERO}} ist so dicht, dass sie eine lebende Mauer aus Gesichtern bildet, die sie dann langsam zu einem unbekannten Ausgang schiebt.",
+        "Ja, wenn {{HERO}} passieren möchte, muss sie einen Weg durch diese Mauer finden, da es kein Aufgeben gibt, denn sie bewegt sich, als habe sie ihren eigenen Willen und zieht sie mit sich.",
+        "Plötzlich tut sich eine Lücke direkt vor ihr auf, und {{HERO}} sieht wie durch ein Fenster einen kleinen grünen Park, der zum Gohliser Schlösschen zu führen scheint, über alle Hindernisse hinweg."
+      ],
+      "en_sentences": [
+        "The crowd around {{HERO}} is so dense, it forms a living wall of faces, which then slowly pushes them towards an unknown exit.",
+        "Indeed, if {{HERO}} wants to pass, they must find a way through this wall, as there is no giving up, for it moves as if it has its own will and pulls them along.",
+        "Suddenly, a gap appears right before them, and {{HERO}} sees through it, like through a window, a small green park that seems to lead towards Gohliser Schlösschen, over all obstacles."
+      ],
+      "image_prompt": "Magritte style, clear daylight, sharp focus. A highly crowded train station (Hauptbahnhof) platform, seen from eye level. An ungendered traveler (our hero) is surrounded by a dense, unmoving 'wall' of faces, all looking blankly forward. The wall has a small, distinct gap, revealing a perfectly manicured green park in the distance. No darkness or mist."
+    }
   }
 ]

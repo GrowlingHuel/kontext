@@ -51,14 +51,11 @@ fun KontextApp() {
                 NavigationBarItem(
                     icon = { Icon(Icons.Default.Book, contentDescription = "Immerse") },
                     label = { Text("Immerse") },
-                    selected = currentRoute == Screen.Immerse.route,
+                    selected = currentRoute == Screen.Immerse.route, // Or check if activity launched? No, just keep UI state for now or unselect.
                     onClick = { 
-                        if (currentRoute != Screen.Immerse.route) {
-                            navController.navigate(Screen.Immerse.route) {
-                                popUpTo(navController.graph.startDestinationId)
-                                launchSingleTop = true
-                            }
-                        }
+                        // Launch StoryActivity directly
+                        val intent = android.content.Intent(navController.context, com.kontext.ui.story.StoryActivity::class.java)
+                        navController.context.startActivity(intent)
                     }
                 )
                 NavigationBarItem(
