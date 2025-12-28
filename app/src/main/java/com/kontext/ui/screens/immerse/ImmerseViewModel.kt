@@ -4,16 +4,19 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.kontext.data.local.FileStorageHelper
 import com.kontext.data.repository.StoryRepository
 import com.kontext.data.repository.VocabRepository
+import com.kontext.data.repository.StorySentence
+import com.kontext.data.local.entity.StoryEntity
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
-
 import android.graphics.Bitmap
-import com.kontext.data.repository.ImageRepository
-import com.kontext.data.repository.StorySentence
-// ... other imports
+import com.kontext.data.repository.StoryResponse
+import org.json.JSONObject
 
 sealed class ImmerseUiState {
     object Initial : ImmerseUiState()
@@ -21,7 +24,7 @@ sealed class ImmerseUiState {
     data class Success(
         val storySegments: List<StorySentence>,
         val image: Bitmap? = null,
-        val selectedWordTranslation: String? = null // For Dictionary Lookup
+        val selectedWordTranslation: String? = null
     ) : ImmerseUiState()
     data class Error(val message: String) : ImmerseUiState()
 }
@@ -30,15 +33,18 @@ sealed class ImmerseUiState {
 class ImmerseViewModel @Inject constructor(
     private val vocabRepository: VocabRepository,
     private val storyRepository: StoryRepository,
-    private val imageRepository: ImageRepository
+    private val fileStorageHelper: FileStorageHelper
 ) : ViewModel() {
 
     private val _uiState = mutableStateOf<ImmerseUiState>(ImmerseUiState.Initial)
     val uiState: State<ImmerseUiState> = _uiState
 
+    val history = storyRepository.getHistory()
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
+
     fun generateStory() {
         viewModelScope.launch {
-            _uiState.value = ImmerseUiState.Loading("Writing your story...")
+            _uiState.value = ImmerseUiState.Loading("Crafting your story...")
             try {
                 // Get 10 random words
                 val cards = vocabRepository.getRandomCards(10)
@@ -49,21 +55,42 @@ class ImmerseViewModel @Inject constructor(
 
                 val words = cards.map { it.germanTerm }
                 
-                // 1. Generate Story
+                // Repo handles generation AND caching AND image generation now
                 val storyResponse = storyRepository.generateStory(words)
                 
-                // Show intermediate state with text while loading image
-                _uiState.value = ImmerseUiState.Success(storyResponse.sentences, null)
-                
-                // 2. Generate Image
-                _uiState.value = ImmerseUiState.Loading("Painting the scene...")
-                val image = imageRepository.generateScene(storyResponse.imageDescription)
-                
-                // 3. Final State
-                _uiState.value = ImmerseUiState.Success(storyResponse.sentences, image)
+                _uiState.value = ImmerseUiState.Success(storyResponse.sentences, storyResponse.image)
                 
             } catch (e: Exception) {
                 _uiState.value = ImmerseUiState.Error("Failed to generate story: ${e.message}")
+            }
+        }
+    }
+
+    fun loadStoryFromLibrary(entity: StoryEntity) {
+        viewModelScope.launch {
+            _uiState.value = ImmerseUiState.Loading("Loading from library...")
+            try {
+                val image = fileStorageHelper.loadBitmapFromPath(entity.imagePath)
+                
+                // Parse JSON
+                val jsonObject = JSONObject(entity.jsonContent)
+                val jsonSentences = jsonObject.optJSONArray("sentences")
+                val sentences = mutableListOf<StorySentence>()
+                if (jsonSentences != null) {
+                    for (i in 0 until jsonSentences.length()) {
+                        val item = jsonSentences.getJSONObject(i)
+                        sentences.add(
+                            StorySentence(
+                                de = item.optString("de", ""),
+                                en = item.optString("en", "")
+                            )
+                        )
+                    }
+                }
+
+                _uiState.value = ImmerseUiState.Success(sentences, image)
+            } catch (e: Exception) {
+                _uiState.value = ImmerseUiState.Error("Failed to load story: ${e.message}")
             }
         }
     }

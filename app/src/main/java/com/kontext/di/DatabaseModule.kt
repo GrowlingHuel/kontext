@@ -29,4 +29,10 @@ object DatabaseModule {
     fun provideVocabCardDao(db: KontextDatabase): VocabCardDao {
         return db.vocabCardDao()
     }
+
+//    @Provides
+//    @Singleton
+//    fun provideStoryDao(db: KontextDatabase): StoryDao {
+//        return db.storyDao()
+//    }
 }

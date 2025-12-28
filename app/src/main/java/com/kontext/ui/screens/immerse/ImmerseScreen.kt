@@ -41,6 +41,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.runtime.collectAsState // Added
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.kontext.data.repository.StorySentence
 import com.kontext.ui.screens.drill.DrillViewModel
@@ -61,9 +62,54 @@ fun ImmerseScreen(
     viewModel: ImmerseViewModel = hiltViewModel(),
     drillViewModel: DrillViewModel = hiltViewModel()
 ) {
+    val history by viewModel.history.collectAsState()
     val uiState by viewModel.uiState
     val context = LocalContext.current
     val toastMessage by viewModel.toastMessage
+    var showLibrary by remember { mutableStateOf(false) }
+
+    // Library Dialog
+    if (showLibrary) {
+        AlertDialog(
+            onDismissRequest = { showLibrary = false },
+            title = { Text("Story Library") },
+            text = {
+                LazyColumn(modifier = Modifier.fillMaxWidth().height(300.dp)) {
+                    if (history.isEmpty()) {
+                        item { Text("No saved stories yet.") }
+                    } else {
+                        items(history) { story ->
+                            Card(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(vertical = 4.dp)
+                                    .clickable {
+                                        viewModel.loadStoryFromLibrary(story)
+                                        showLibrary = false
+                                    },
+                                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)
+                            ) {
+                                Column(modifier = Modifier.padding(12.dp)) {
+                                    Text(
+                                        text = story.vocabSignature.replace("-", ", "),
+                                        style = MaterialTheme.typography.bodyMedium,
+                                        fontWeight = FontWeight.Bold
+                                    )
+                                    Text(
+                                        text = "Saved: ${java.text.SimpleDateFormat("MMM dd, HH:mm").format(java.util.Date(story.createdAt))}",
+                                        style = MaterialTheme.typography.bodySmall
+                                    )
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            confirmButton = {
+                TextButton(onClick = { showLibrary = false }) { Text("Close") }
+            }
+        )
+    }
 
     // Handle Toast
     if (toastMessage != null) {
@@ -101,6 +147,8 @@ fun ImmerseScreen(
                         Text("Generate a story based on your vocabulary.", textAlign = TextAlign.Center)
                         Spacer(modifier = Modifier.height(32.dp))
                         Button(onClick = { viewModel.generateStory() }) { Text("Generate Story") }
+                        Spacer(modifier = Modifier.height(16.dp))
+                        TextButton(onClick = { showLibrary = true }) { Text("View Library") }
                     }
                 }
             }
