@@ -1,0 +1,1424 @@
+[
+  {
+    "batch_id": 1,
+    "target_words": [
+      "der",
+      "und",
+      "in",
+      "sein",
+      "ein",
+      "haben",
+      "sie",
+      "werden",
+      "von",
+      "ich"
+    ],
+    "image_prompt": "A warm, inviting living room or kitchen. A table is set with two or three coffee cups and a delicious-looking cake. The perspective is either first-person, looking at the table, or shows blurred figures/silhouettes of people, making their individual genders indistinguishable. Gentle, natural light fills the cozy scene. Realistic photograph, shallow depth of field, soft colors.",
+    "story_M": {
+      "de": "Ich bin {{HERO}}. Ich habe einen guten Freund. Der Freund heißt Leo. Er und ich sind in seinem Haus. Wir werden Kaffee trinken. Seine Schwester kommt auch. Sie werden alle zusammen sein. Der Kuchen ist von der Bäckerei.",
+      "en": "I am {{HERO}}. I have a good friend. The friend is called Leo. He and I are in his house. We will drink coffee. His sister is also coming. They will all be together. The cake is from the bakery."
+    },
+    "story_F": {
+      "de": "Ich bin {{HERO}}. Ich habe eine gute Freundin. Die Freundin heißt Lena. Sie und ich sind in ihrem Haus. Wir werden Kaffee trinken. Ihr Bruder kommt auch. Sie werden alle zusammen sein. Der Kuchen ist von der Bäckerei.",
+      "en": "I am {{HERO}}. I have a good friend. The friend is called Lena. She and I are in her house. We will drink coffee. Her brother is also coming. They will all be together. The cake is from the bakery."
+    }
+  },
+  {
+    "batch_id": 2,
+    "target_words": [
+      "nicht",
+      "es",
+      "mit",
+      "sich",
+      "er",
+      "auf",
+      "für",
+      "auch",
+      "an",
+      "dass"
+    ],
+    "image_prompt": "A distant, low-angle shot showing the silhouette of a person standing by a sunlit window, holding a coffee cup. They are looking out over a vibrant, bustling European town square where a morning market is setting up. The light is soft and golden, suggesting early morning. The person's identity is indistinguishable, a mere outline against the bright background.",
+    "story_M": {
+      "de": "{{HERO}} ist früh auf. Er ist nicht müde. Es ist ein schöner Morgen. Er trinkt Kaffee mit Milch. Er freut sich auf den Tag. Später geht {{HERO}} auf den Markt. Er kauft Äpfel für sein Frühstück. Auch kauft er frisches Brot. {{HERO}} denkt an seine Freunde. Er weiß, dass heute ein guter Tag wird.",
+      "en": "{{HERO}} is up early. He is not tired. It is a beautiful morning. He drinks coffee with milk. He is looking forward to the day. Later, {{HERO}} goes to the market. He buys apples for his breakfast. He also buys fresh bread. {{HERO}} thinks of his friends. He knows that today will be a good day."
+    },
+    "story_F": {
+      "de": "{{HERO}} ist früh auf. Sie ist nicht müde. Es ist ein schöner Morgen. Sie trinkt Kaffee mit Milch. Sie freut sich auf den Tag. Später geht {{HERO}} auf den Markt. Sie kauft Äpfel für ihr Frühstück. Auch kauft sie frisches Brot. {{HERO}} denkt an ihre Freunde. Sie weiß, dass heute ein guter Tag wird.",
+      "en": "{{HERO}} is up early. She is not tired. It is a beautiful morning. She drinks coffee with milk. She is looking forward to the day. Later, {{HERO}} goes to the market. She buys apples for her breakfast. She also buys fresh bread. {{HERO}} thinks of her friends. She knows that today will be a good day."
+    }
+  },
+  {
+    "batch_id": 3,
+    "target_words": [
+      "zu",
+      "als",
+      "können",
+      "dies",
+      "wie",
+      "wir",
+      "ihr",
+      "so",
+      "bei",
+      "sein"
+    ],
+    "image_prompt": "A cozy, light-filled living room. Through a window, soft morning light enters. On a sofa, seen from a first-person perspective, are gentle hands holding a warm cup of coffee or tea. In the background, slightly out of focus, a blurred silhouette of a friend is visible, possibly waving or smiling. The overall atmosphere is warm, welcoming, and happy, suggesting a fresh start to the day and good company.",
+    "story_M": {
+      "de": "{{HERO}} ist hier. Dies ist sein Zuhause. Er ist so glücklich. Wir sind bei ihm. Er ist als ein neuer Freund da. Wie schön, dass wir ihn haben! Er kann heute viel Neues lernen. Ihr seid auch zu Besuch. Sein Tag wird gut sein.",
+      "en": "{{HERO}} is here. This is his home. He is so happy. We are with him. He is here as a new friend. How nice that we have him! He can learn many new things today. You (plural) are also visiting. His day will be good."
+    },
+    "story_F": {
+      "de": "{{HERO}} ist hier. Dies ist ihr Zuhause. Sie ist so glücklich. Wir sind bei ihr. Sie ist als eine neue Freundin da. Wie schön, dass wir sie haben! Sie kann heute viel Neues lernen. Ihr seid auch zu Besuch. Ihr Tag wird gut sein.",
+      "en": "{{HERO}} is here. This is her home. She is so happy. We are with her. She is here as a new friend. How nice that we have her! She can learn many new things today. You (plural) are also visiting. Her day will be good."
+    }
+  },
+  {
+    "batch_id": 4,
+    "target_words": [
+      "aber",
+      "man",
+      "noch",
+      "nach",
+      "oder",
+      "all",
+      "aus",
+      "was",
+      "nur",
+      "sagen"
+    ],
+    "image_prompt": "A silhouette of a person stands in a cozy, modern kitchen at dusk, looking thoughtfully out a large window into a city street. A faint glow from distant city lights is visible. On a kitchen counter, there are a few simple food items like bread and cheese. The atmosphere is calm and reflective. Distant view, cinematic.",
+    "story_M": {
+      "de": "{{HERO}} ist zu Hause. Es ist Abend. Was soll er essen? Er hat noch Brot oder Käse. Aber er will etwas Neues. Man kann nach dem Supermarkt gehen. Nur eine kurze Fahrt. All das Gemüse ist frisch. Aus dem Haus gehen ist gut. Er kann sagen: \"Ich kaufe ein!\"",
+      "en": "{{HERO}} is at home. It is evening. What should he eat? He still has bread or cheese. But he wants something new. One can go to the supermarket. Only a short drive. All the vegetables are fresh. Going out of the house is good. He can say: \"I'm going shopping!\""
+    },
+    "story_F": {
+      "de": "{{HERO}} ist zu Hause. Es ist Abend. Was soll sie essen? Sie hat noch Brot oder Käse. Aber sie will etwas Neues. Man kann nach dem Supermarkt gehen. Nur eine kurze Fahrt. All das Gemüse ist frisch. Aus dem Haus gehen ist gut. Sie kann sagen: \"Ich kaufe ein!\"",
+      "en": "{{HERO}} is at home. It is evening. What should she eat? She still has bread or cheese. But she wants something new. One can go to the supermarket. Only a short drive. All the vegetables are fresh. Going out of the house is good. She can say: \"I'm going shopping!\""
+    }
+  },
+  {
+    "batch_id": 5,
+    "target_words": [
+      "dann",
+      "wenn",
+      "müssen",
+      "um",
+      "ja",
+      "kein",
+      "über",
+      "da",
+      "geben",
+      "vor"
+    ],
+    "image_prompt": "A peaceful park scene at golden hour. A single person, depicted as a gender-neutral silhouette, is running on a winding path. In the foreground, elements like a tree or vibrant flowers are visible, slightly out of focus, suggesting the runner's perspective. The atmosphere is calm and reflective. The sky is soft orange and blue.",
+    "story_M": {
+      "de": "{{HERO}} ist heute im Park. Es ist ein schöner Tag. Er muss laufen, um fit zu bleiben. Da ist ein Baum. Er sieht ihn an. Wenn er am Baum ist, dann macht er eine kleine Pause. Er denkt über seinen Tag nach. Es gibt kein Problem. \"Ja, das ist gut!\", sagt er vor sich hin. Ein kleiner Vogel kommt. Er muss dem Vogel kein Brot geben. Das ist nicht gut für Vögel.",
+      "en": "{{HERO}} is in the park today. It is a beautiful day. He must run to stay fit. There is a tree. He looks at it. When he is at the tree, then he takes a small break. He thinks about his day. There is no problem. \"Yes, that is good!\", he says to himself. A small bird comes. He must not give the bird any bread. That is not good for birds."
+    },
+    "story_F": {
+      "de": "{{HERO}} ist heute im Park. Es ist ein schöner Tag. Sie muss laufen, um fit zu bleiben. Da ist eine schöne Blume. Sie sieht sie an. Wenn sie an der Blume ist, dann macht sie eine kleine Pause. Sie denkt über ihren Tag nach. Es gibt kein Problem. \"Ja, das ist gut!\", sagt sie vor sich hin. Ein kleines Eichhörnchen kommt. Sie muss dem Eichhörnchen keine Nüsse geben. Das ist nicht gut.",
+      "en": "{{HERO}} is in the park today. It is a beautiful day. She must run to stay fit. There is a beautiful flower. She looks at it. When she is at the flower, then she takes a small break. She thinks about her day. There is no problem. \"Yes, that is good!\", she says to herself. A small squirrel comes. She must not give the squirrel any nuts. That is not good."
+    }
+  },
+  {
+    "batch_id": 6,
+    "target_words": [
+      "mein",
+      "mehr",
+      "das Jahr",
+      "du",
+      "durch",
+      "viel",
+      "wollen",
+      "machen",
+      "andere (r",
+      "sollen"
+    ],
+    "image_prompt": "A person walking on a path through a peaceful, green forest. The scene is either a first-person view looking down the path, or a distant shot of a silhouette on the path, or from behind the person. Sunlight filters through the trees. The atmosphere is calm and reflective, suggesting a moment of thought and determination.",
+    "story_M": {
+      "de": "Mein Name ist {{HERO}}. Ich habe **mein** Ziel. **Dieses Jahr** **will** ich **viel** Neues lernen. Ich **will** **mehr** Sport **machen**. Ich gehe **durch** den Wald. Ich denke: \"**Du** **sollst** stark sein!\" **Andere** Leute **sollen** auch **viel** Sport **machen**. Das ist gut für alle.",
+      "en": "My name is {{HERO}}. I have my goal. This year I want to learn a lot of new things. I want to do more sports. I walk through the forest. I think: \"You should be strong!\" Other people should also do a lot of sport. That is good for everyone."
+    },
+    "story_F": {
+      "de": "Mein Name ist {{HERO}}. Ich habe **mein** Ziel. **Dieses Jahr** **will** ich **viel** Neues lernen. Ich **will** **mehr** Sport **machen**. Ich gehe **durch** den Wald. Ich denke: \"**Du** **sollst** stark sein!\" **Andere** Leute **sollen** auch **viel** Sport **machen**. Das ist gut für alle.",
+      "en": "My name is {{HERO}}. I have my goal. This year I want to learn a lot of new things. I want to do more sports. I walk through the forest. I think: \"You should be strong!\" Other people should also do a lot of sport. That is good for everyone."
+    }
+  },
+  {
+    "batch_id": 7,
+    "target_words": [
+      "schon",
+      "kommen",
+      "mir",
+      "immer",
+      "mich",
+      "gehen",
+      "groß",
+      "hier",
+      "ganz",
+      "zwei"
+    ],
+    "image_prompt": "A sunny park with lush green grass and distant trees. The view is from a first-person perspective, looking down a gently winding path. A single, silhouette-based figure is visible in the mid-distance, walking towards the viewer. On the ground in the foreground, two colorful balls are ready for play. The overall mood is anticipation and mild excitement.",
+    "story_M": {
+      "de": "Ich bin {{HERO}}. Ich bin **schon hier**. Mein Freund Tom **kommt**. Er ist **ganz groß**. Er **geht** **immer** zu **mir**. Tom sieht **mich**. Das freut **mich**. Wir haben **zwei** Bälle. Wir **gehen** jetzt **hier** spielen.",
+      "en": "I am {{HERO}}. I am already here. My friend Tom is coming. He is quite tall. He always walks to me. Tom sees me. That makes me happy. We have two balls. We are going to play here now."
+    },
+    "story_F": {
+      "de": "Ich bin {{HERO}}. Ich bin **schon hier**. Meine Freundin Anna **kommt**. Sie ist **ganz groß**. Sie **geht** **immer** zu **mir**. Anna sieht **mich**. Das freut **mich**. Wir haben **zwei** Bälle. Wir **gehen** jetzt **hier** spielen.",
+      "en": "I am {{HERO}}. I am already here. My friend Anna is coming. She is quite tall. She always walks to me. Anna sees me. That makes me happy. We have two balls. We are going to play here now."
+    }
+  },
+  {
+    "batch_id": 8,
+    "target_words": [
+      "also",
+      "jetzt",
+      "doch",
+      "wieder",
+      "uns",
+      "gut",
+      "bis",
+      "wissen",
+      "sehen",
+      "einer"
+    ],
+    "image_prompt": "A scenic park on a sunny day. Two friends are greeting each other. One friend is visible from behind, their silhouette slightly visible against the sunlight, while the other friend smiles. A cozy café with outdoor seating is in the background. The overall atmosphere is warm and friendly.",
+    "story_M": {
+      "de": "Max ist im Park. Er ist allein. Jetzt sieht er seinen Freund Tom. „Hallo Tom!“, sagt Max. „Schön, dich wieder zu sehen!“ „Hallo Max! Geht es dir gut?“, fragt Tom. „Ja, mir geht es gut, danke. Und dir?“, antwortet Max. „Auch gut. Wollen wir einen Kaffee trinken?“, schlägt Tom vor. „Ja, gern! Ich habe doch Zeit“, sagt Max. „Wir können auch über unsere Pläne sprechen.“ Sie gehen zu einem Café. Sie trinken Kaffee und reden. „Wir müssen das öfter machen“, sagt Max. „Wir sehen uns so selten.“ „Ja, du hast recht“, sagt Tom. „Wir wissen, dass das wichtig ist.“ Max nickt. „Also, wann sehen wir uns wieder? Vielleicht am Wochenende?“ Tom überlegt. „Am Sonntag? Einer von uns kann den anderen anrufen.“ „Gut! Bis Sonntag dann!“, sagt Max. Sie verabschieden sich.",
+      "en": "Max is in the park. He is alone. Now he sees his friend Tom. \"Hello Tom!\", says Max. \"Good to see you again!\" \"Hello Max! Are you well?\", asks Tom. \"Yes, I am well, thank you. And you?\", answers Max. \"Also well. Shall we drink a coffee?\", suggests Tom. \"Yes, gladly! I do have time,\" says Max. \"We can also talk about our plans.\" They go to a café. They drink coffee and talk. \"We must do this more often,\" says Max. \"We see each other so rarely.\" \"Yes, you are right,\" says Tom. \"We know that this is important.\" Max nods. \"So, when do we see each other again? Perhaps on the weekend?\" Tom considers. \"On Sunday? One of us can call the other.\" \"Good! Until Sunday then!\", says Max. They say goodbye."
+    },
+    "story_F": {
+      "de": "Mia ist im Park. Sie ist allein. Jetzt sieht sie ihre Freundin Anna. „Hallo Anna!“, sagt Mia. „Schön, dich wieder zu sehen!“ „Hallo Mia! Geht es dir gut?“, fragt Anna. „Ja, mir geht es gut, danke. Und dir?“, antwortet Mia. „Auch gut. Wollen wir einen Kaffee trinken?“, schlägt Anna vor. „Ja, gern! Ich habe doch Zeit“, sagt Mia. „Wir können auch über unsere Pläne sprechen.“ Sie gehen zu einem Café. Sie trinken Kaffee und reden. „Wir müssen das öfter machen“, sagt Mia. „Wir sehen uns so selten.“ „Ja, du hast recht“, sagt Anna. „Wir wissen, dass das wichtig ist.“ Mia nickt. „Also, wann sehen wir uns wieder? Vielleicht am Wochenende?“ Anna überlegt. „Am Sonntag? Einer von uns kann den anderen anrufen.“ „Gut! Bis Sonntag dann!“, sagt Mia. Sie verabschieden sich.",
+      "en": "Mia is in the park. She is alone. Now she sees her friend Anna. \"Hello Anna!\", says Mia. \"Good to see you again!\" \"Hello Mia! Are you well?\", asks Anna. \"Yes, I am well, thank you. And you?\", answers Mia. \"Also well. Shall we drink a coffee?\", suggests Anna. \"Yes, gladly! I do have time,\" says Mia. \"We can also talk about our plans.\" They go to a café. They drink coffee and talk. \"We must do this more often,\" says Mia. \"We see each other so rarely.\" \"Yes, you are right,\" says Anna. \"We know that this is important.\" Mia nods. \"So, when do we see each other again? Perhaps on the weekend?\" Anna considers. \"On Sunday? One of us can call the other.\" \"Good! Until Sunday then!\", says Mia. They say goodbye."
+    }
+  },
+  {
+    "batch_id": 9,
+    "target_words": [
+      "sehr",
+      "Mal",
+      "lassen",
+      "neu",
+      "stehen",
+      "unser",
+      "jede (r",
+      "weil",
+      "unter",
+      "der Mensch"
+    ],
+    "image_prompt": "A vibrant red bicycle, gleaming, is positioned under a small, dry shelter, possibly a garage entrance or a porch overhang. The perspective is slightly low, emphasizing the bicycle. In the far background, a blurred silhouette of a person stands, observing the bicycle with quiet satisfaction. The overall mood is calm and appreciative.",
+    "story_M": {
+      "de": "Max hat ein neues Fahrrad. Es ist sehr rot. Jeden Tag fährt er damit zur Arbeit. Jedes Mal, wenn er es sieht, ist er sehr glücklich. Er lässt sein Fahrrad nie draußen stehen. Es steht immer sicher in der Garage. Das ist unser Max, er kümmert sich gut um seine Sachen, weil er sie schätzt. Der Mensch ist manchmal sehr ordentlich. Max ist so ein Mensch. Manchmal stellt er es unter das Vordach, wenn es regnet.",
+      "en": "Max has a new bicycle. It is very red. Every day he rides it to work. Every time he sees it, he is very happy. He never leaves his bicycle standing outside. It always stands safely in the garage. That is our Max, he takes good care of his things because he values them. A person is sometimes very tidy. Max is such a person. Sometimes he places it under the porch when it rains."
+    },
+    "story_F": {
+      "de": "Mia hat ein neues Fahrrad. Es ist sehr rot. Jeden Tag fährt sie damit zur Arbeit. Jedes Mal, wenn sie es sieht, ist sie sehr glücklich. Sie lässt ihr Fahrrad nie draußen stehen. Es steht immer sicher in der Garage. Das ist unsere Mia, sie kümmert sich gut um ihre Sachen, weil sie sie schätzt. Der Mensch ist manchmal sehr ordentlich. Mia ist so ein Mensch. Manchmal stellt sie es unter das Vordach, wenn es regnet.",
+      "en": "Mia has a new bicycle. It is very red. Every day she rides it to work. Every time she sees it, she is very happy. She never leaves her bicycle standing outside. It always stands safely in the garage. That is our Mia, she takes good care of her things because she values them. A person is sometimes very tidy. Mia is such a person. Sometimes she places it under the porch when it rains."
+    }
+  },
+  {
+    "batch_id": 10,
+    "target_words": [
+      "ihm",
+      "ihn",
+      "denn",
+      "das Beispiel",
+      "erste (r",
+      "die Zeit",
+      "lang",
+      "leben",
+      "die Frau",
+      "etwas"
+    ],
+    "image_prompt": "A serene park scene with lush greenery, bright flowers, and a small bird perched on a branch. In the foreground, two figures, seen from a distance or as silhouettes, are interacting, one offering something to the other. The sunlight filters through the trees, creating a peaceful atmosphere. A sense of new beginnings and gentle connection.",
+    "story_M": {
+      "de": "{{HERO}} heißt Max. Max möchte lang leben. Es ist seine erste Zeit in der Stadt. Er trifft eine Frau. Die Frau ist sehr nett zu ihm. Max sieht einen schönen Park. Er fragt die Frau: \"Ist der Park schön?\" Sie sagt: \"Ja, er ist toll! Max, ich gebe dir etwas Wasser.\" Sie gibt ihm etwas. Max dankt ihr. \"Das ist ein gutes Beispiel für Freundlichkeit,\" denkt er. Max mag die Frau. Er sieht ihn, einen kleinen Vogel, der singt. Was macht er denn jetzt? Max geht mit ihr in den Park.",
+      "en": "{{HERO}} is called Max. Max wants to live long. It is his first time in the city. He meets a woman. The woman is very kind to him. Max sees a beautiful park. He asks the woman: \"Is the park beautiful?\" She says: \"Yes, it's great! Max, I'll give you some water.\" She gives him something. Max thanks her. \"That is a good example of kindness,\" he thinks. Max likes the woman. He sees him, a little bird, singing. What does he do now? Max goes with her to the park."
+    },
+    "story_F": {
+      "de": "{{HERO}} heißt Anna. Anna ist eine junge Frau. Sie möchte lang leben. Es ist ihre erste Zeit in der Stadt. Sie trifft einen Mann. Der Mann ist sehr nett zu ihr. Anna sieht einen schönen Park. Sie fragt den Mann: \"Ist der Park schön?\" Er sagt: \"Ja, er ist toll! Anna, ich gebe dir etwas Wasser.\" Er gibt ihr etwas. Anna dankt ihm. \"Das ist ein gutes Beispiel für Freundlichkeit,\" denkt sie. Anna mag den Mann. Sie sieht ihn, einen kleinen Vogel, der singt. Was macht sie denn jetzt? Anna geht mit ihm in den Park.",
+      "en": "{{HERO}} is called Anna. Anna is a young woman. She wants to live long. It is her first time in the city. She meets a man. The man is very kind to her. Anna sees a beautiful park. She asks the man: \"Is the park beautiful?\" He says: \"Yes, it's great! Anna, I'll give you some water.\" He gives her something. Anna thanks him. \"That is a good example of kindness,\" she thinks. Anna likes the man. She sees him, a little bird, singing. What does she do now? Anna goes with him to the park."
+    }
+  },
+  {
+    "batch_id": 11,
+    "target_words": [
+      "selbst",
+      "wenig",
+      "finden",
+      "gegen",
+      "zwischen",
+      "drei",
+      "liegen",
+      "wo",
+      "nichts",
+      "klein"
+    ],
+    "image_prompt": "A cozy room with scattered children's toys on the wooden floor. Three distinct toys are clearly visible. A person's silhouette is seen leaning casually against a doorframe, looking down towards a table where a small red ball is partially visible underneath. The scene is bathed in warm, soft light, conveying a sense of gentle searching and discovery. Distant, wide shot.",
+    "story_M": {
+      "de": "Max ist allein. Er ist selbst hier. Er hat wenig Hunger. Er muss seinen Ball finden. Er lehnt gegen die Tür. Sein Ball ist nicht zwischen den Stühlen. Er sieht drei Spielzeuge. Sie liegen auf dem Boden. Wo ist der Ball? Er findet nichts. Aber dann, da ist ein kleiner roter Ball unter dem Tisch! Max lacht.",
+      "en": "Max is alone. He is here by himself. He has little hunger. He must find his ball. He leans against the door. His ball is not between the chairs. He sees three toys. They lie on the floor. Where is the ball? He finds nothing. But then, there is a small red ball under the table! Max laughs."
+    },
+    "story_F": {
+      "de": "Anna ist allein. Sie ist selbst hier. Sie hat wenig Hunger. Sie muss ihren Ball finden. Sie lehnt gegen die Tür. Ihr Ball ist nicht zwischen den Stühlen. Sie sieht drei Spielzeuge. Sie liegen auf dem Boden. Wo ist der Ball? Sie findet nichts. Aber dann, da ist ein kleiner roter Ball unter dem Tisch! Anna lacht.",
+      "en": "Anna is alone. She is here by herself. She has little hunger. She must find her ball. She leans against the door. Her ball is not between the chairs. She sees three toys. They lie on the floor. Where is the ball? She finds nothing. But then, there is a small red ball under the table! Anna laughs."
+    }
+  },
+  {
+    "batch_id": 12,
+    "target_words": [
+      "der Tag",
+      "deutsch",
+      "bleiben",
+      "nun",
+      "sondern",
+      "heute",
+      "beide",
+      "hoch",
+      "damit",
+      "ohne"
+    ],
+    "image_prompt": "A warm, sunlit room, focusing on a study desk. On the desk, a laptop is positioned high, next to an open book. A silhouette of a person is visible, seated at the desk, deeply engrossed in their studies. The scene conveys a sense of quiet concentration and learning.",
+    "story_M": {
+      "de": "Es ist ein neuer Tag. Max lernt Deutsch. Er will heute nicht arbeiten, sondern Deutsch lernen. Er möchte zu Hause bleiben, damit er viel üben kann. Nun sind er und sein Deutschbuch beide bereit. Er stellt seinen Laptop hoch auf den Tisch. Ohne sein Wörterbuch kann er nicht lernen. Er ist sehr motiviert.",
+      "en": "It is a new day. Max is learning German. Today he doesn't want to work, but rather learn German. He wants to stay at home so that he can practice a lot. Now he and his German book are both ready. He places his laptop high on the table. Without his dictionary, he cannot learn. He is very motivated."
+    },
+    "story_F": {
+      "de": "Es ist ein neuer Tag. Mia lernt Deutsch. Sie will heute nicht arbeiten, sondern Deutsch lernen. Sie möchte zu Hause bleiben, damit sie viel üben kann. Nun sind sie und ihr Deutschbuch beide bereit. Sie stellt ihren Laptop hoch auf den Tisch. Ohne ihr Wörterbuch kann sie nicht lernen. Sie ist sehr motiviert.",
+      "en": "It is a new day. Mia is learning German. Today she doesn't want to work, but rather learn German. She wants to stay at home so that she can practice a lot. Now she and her German book are both ready. She places her laptop high on the table. Without her dictionary, she cannot learn. She is very motivated."
+    }
+  },
+  {
+    "batch_id": 13,
+    "target_words": [
+      "der Mann",
+      "welch",
+      "tun",
+      "einmal",
+      "ihnen",
+      "heißen",
+      "ob",
+      "denken",
+      "dabei",
+      "seit"
+    ],
+    "image_prompt": "A person walking through a bustling European city street. An old man is selling books at a small, charming stand. The scene is bright and inviting. The protagonist is viewed from behind, a silhouette against the cityscape, or from a distant perspective, making their gender ambiguous. Focus on the atmosphere of discovery and observation.",
+    "story_M": {
+      "de": "Einmal war HERO in einer neuen Stadt. Er spazierte durch die Straßen und sah einen alten Mann, der an einem kleinen Stand Bücher verkaufte. HERO dachte: \"Welch eine interessante Stadt!\" Er fragte sich, was er heute tun sollte. Sollte er ein Buch kaufen oder lieber ein Café suchen? HERO überlegte, ob der Mann ihm vielleicht einen Tipp geben könnte. Der Mann heißt Herr Müller. HERO beobachtete ihn dabei, wie er freundlich mit Kunden sprach. HERO ist seit drei Tagen hier und vermisst seine Freunde. Er denkt an sie und muss ihnen bald eine Nachricht schicken.",
+      "en": "Once, HERO was in a new city. He walked through the streets and saw an old man selling books at a small stand. HERO thought: \"What an interesting city!\" He wondered what he should do today. Should he buy a book or rather look for a cafe? HERO considered whether the man might give him a tip. The man's name is Mr. Müller. HERO watched him while he spoke kindly with customers. HERO has been here for three days and misses his friends. He thinks of them and must send them a message soon."
+    },
+    "story_F": {
+      "de": "Einmal war HERO in einer neuen Stadt. Sie spazierte durch die Straßen und sah einen alten Mann, der an einem kleinen Stand Bücher verkaufte. HERO dachte: \"Welch eine interessante Stadt!\" Sie fragte sich, was sie heute tun sollte. Sollte sie ein Buch kaufen oder lieber ein Café suchen? HERO überlegte, ob der Mann ihr vielleicht einen Tipp geben könnte. Der Mann heißt Herr Müller. HERO beobachtete ihn dabei, wie er freundlich mit Kunden sprach. HERO ist seit drei Tagen hier und vermisst ihre Freunde. Sie denkt an sie und muss ihnen bald eine Nachricht schicken.",
+      "en": "Once, HERO was in a new city. She walked through the streets and saw an old man selling books at a small stand. HERO thought: \"What an interesting city!\" She wondered what she should do today. Should she buy a book or rather look for a cafe? HERO considered whether the man might give her a tip. The man's name is Mr. Müller. HERO watched him while he spoke kindly with customers. HERO has been here for three days and misses her friends. She thinks of them and must send them a message soon."
+    }
+  },
+  {
+    "batch_id": 14,
+    "target_words": [
+      "einfach",
+      "erst",
+      "das Kind",
+      "das Land",
+      "stellen",
+      "zeigen",
+      "natürlich",
+      "alt",
+      "dort",
+      "Deutschland"
+    ],
+    "image_prompt": "A person, viewed from behind, sits at a simple wooden table in a well-lit room in Germany. On the table, there is a book and a smartphone. The person is holding the smartphone, showing an image on its screen. A window in the background shows a hint of a German city or landscape. The scene evokes a feeling of quiet contemplation and new beginnings.",
+    "story_M": {
+      "de": "Max ist 25 Jahre **alt**. Er ist **erst** seit kurzem in **Deutschland**. Dieses **Land** ist neu für ihn. Am Anfang ist es nicht immer **einfach**, aber Max lernt schnell. Er **zeigt** seinem Freund ein Foto von **seinem Kind**. Sein Kind ist noch klein. Max **stellt** sein Buch auf den Tisch. **Natürlich** vermisst er seine Familie, aber er mag es **dort** in Deutschland.",
+      "en": "Max is 25 years **old**. He has **only** recently been in **Germany**. This **country** is new for him. In the beginning, it's not always **easy**, but Max learns quickly. He **shows** his friend a photo of **his child**. His child is still small. Max **places** his book on the table. **Of course**, he misses his family, but he likes it **there** in Germany."
+    },
+    "story_F": {
+      "de": "Lena ist 25 Jahre **alt**. Sie ist **erst** seit kurzem in **Deutschland**. Dieses **Land** ist neu für sie. Am Anfang ist es nicht immer **einfach**, aber Lena lernt schnell. Sie **zeigt** ihrer Freundin ein Foto von **ihrem Kind**. Ihr Kind ist noch klein. Lena **stellt** ihr Buch auf den Tisch. **Natürlich** vermisst sie ihre Familie, aber sie mag es **dort** in Deutschland.",
+      "en": "Lena is 25 years **old**. She has **only** recently been in **Germany**. This **country** is new for her. In the beginning, it's not always **easy**, but Lena learns quickly. She **shows** her friend a photo of **her child**. Her child is still small. Lena **places** her book on the table. **Of course**, she misses her family, but she likes it **there** in Germany."
+    }
+  },
+  {
+    "batch_id": 15,
+    "target_words": [
+      "gleich",
+      "nehmen",
+      "dürfen",
+      "wichtig",
+      "vielleicht",
+      "hören",
+      "das Haus",
+      "nein",
+      "wer",
+      "dazu"
+    ],
+    "image_prompt": "An atmospheric interior shot of a house at twilight. A closed wooden door is prominent, partially illuminated by soft, ambient light. A faint, gender-neutral silhouette of a person stands near the door, pausing, perhaps listening or reaching out. The scene evokes quiet anticipation or a slight mystery.",
+    "story_M": {
+      "de": "Max ist in seinem Haus. Er hört ein Geräusch. \"Wer ist das?\", denkt er. Es ist wichtig, vorsichtig zu sein. Er fragt sich: \"Darf ich die Tür öffnen?\" Vielleicht ist es ein Freund. Er will seinen Schlüssel nehmen. \"Nein\", sagt er leise zu sich. Er muss noch etwas dazu machen. Er geht gleich zur Tür.",
+      "en": "Max is in his house. He hears a noise. \"Who is that?\", he thinks. It is important to be careful. He asks himself: \"Am I allowed to open the door?\" Maybe it is a friend. He wants to take his key. \"No,\" he says quietly to himself. He still has to do something else (in addition to that). He goes to the door right away."
+    },
+    "story_F": {
+      "de": "Mia ist in ihrem Haus. Sie hört ein Geräusch. \"Wer ist das?\", denkt sie. Es ist wichtig, vorsichtig zu sein. Sie fragt sich: \"Darf ich die Tür öffnen?\" Vielleicht ist es eine Freundin. Sie will ihren Schlüssel nehmen. \"Nein\", sagt sie leise zu sich. Sie muss noch etwas dazu machen. Sie geht gleich zur Tür.",
+      "en": "Mia is in her house. She hears a noise. \"Who is that?\", she thinks. It is important to be careful. She asks herself: \"Am I allowed to open the door?\" Maybe it is a friend. She wants to take her key. \"No,\" she says quietly to herself. She still has to do something else (in addition to that). She goes to the door right away."
+    }
+  },
+  {
+    "batch_id": 16,
+    "target_words": [
+      "eigentlich",
+      "letzte (r",
+      "fragen",
+      "der Herr",
+      "halten",
+      "glauben",
+      "die Frage",
+      "gelten",
+      "gerade",
+      "folgen"
+    ],
+    "image_prompt": "A bustling city street corner with a traffic light. A well-dressed person, seen from behind or in silhouette, is paused on the sidewalk, observing an older gentleman waiting across the street at the red light. The scene emphasizes urban architecture and movement, with a thoughtful, observant atmosphere.",
+    "story_M": {
+      "de": "HERO ist gerade in der Stadt. Er hat eigentlich keine Zeit, aber er möchte einen Kaffee trinken. Plötzlich sieht er der Herr Müller. Herr Müller ist HERO's alter Lehrer. HERO möchte ihn fragen, wie es ihm geht. Er muss halten, denn Herr Müller steht an einer Ampel. HERO glaubt, Herr Müller sieht ihn nicht. Die Frage ist: Soll er ihn ansprechen? Letzter Monat hat HERO Herrn Müller schon einmal gesehen. Die Regeln für alte Lehrer gelten immer noch: Man muss respektvoll sein. HERO entscheidet sich, Herrn Müller zu folgen, um ihn später zu grüßen.",
+      "en": "HERO is just in the city. He actually doesn't have time, but he wants to drink a coffee. Suddenly, he sees Mr. Müller. Mr. Müller is HERO's old teacher. HERO wants to ask him how he is doing. He has to stop, because Mr. Müller is standing at a traffic light. HERO believes Mr. Müller doesn't see him. The question is: Should he speak to him? Last month, HERO had already seen Mr. Müller once. The rules for old teachers still apply: One must be respectful. HERO decides to follow Mr. Müller to greet him later."
+    },
+    "story_F": {
+      "de": "HERO ist gerade in der Stadt. Sie hat eigentlich keine Zeit, aber sie möchte einen Kaffee trinken. Plötzlich sieht sie der Herr Schmidt. Herr Schmidt ist HERO's alter Lehrer. HERO möchte ihn fragen, wie es ihm geht. Sie muss halten, denn Herr Schmidt steht an einer Ampel. HERO glaubt, Herr Schmidt sieht sie nicht. Die Frage ist: Soll sie ihn ansprechen? Letzter Monat hat HERO Herrn Schmidt schon einmal gesehen. Die Regeln für alte Lehrer gelten immer noch: Man muss respektvoll sein. HERO entscheidet sich, Herrn Schmidt zu folgen, um ihn später zu grüßen.",
+      "en": "HERO is just in the city. She actually doesn't have time, but she wants to drink a coffee. Suddenly, she sees Mr. Schmidt. Mr. Schmidt is HERO's old teacher. HERO wants to ask him how he is doing. She has to stop, because Mr. Schmidt is standing at a traffic light. HERO believes Mr. Schmidt doesn't see her. The question is: Should she speak to him? Last month, HERO had already seen Mr. Schmidt once. The rules for old teachers still apply: One must be respectful. HERO decides to follow Mr. Schmidt to greet him later."
+    }
+  },
+  {
+    "batch_id": 17,
+    "target_words": [
+      "sprechen",
+      "führen",
+      "bringen",
+      "die Welt",
+      "gar",
+      "eigen",
+      "genau",
+      "mögen",
+      "spät",
+      "bereits"
+    ],
+    "image_prompt": "A serene morning scene. Sunlight filters into a room, casting long shadows. A person, depicted as a silhouette or viewed from behind, stands near a window with a dog by their side, looking out at a bright, waking world. A steaming mug rests on a nearby table, suggesting a quiet start to the day. The atmosphere is peaceful and full of subtle anticipation.",
+    "story_M": {
+      "de": "Max wacht auf. Es ist bereits hell. Er steht auf. Es ist nicht spät. Max mag den Morgen. Er trinkt seinen eigenen Kaffee. Dann will er seinen Hund führen. Er bringt einen Ball mit. Er muss genau wissen, wo sie spielen können. Max möchte auch mit seiner Freundin Lena sprechen. Sie sprechen über die Welt. Max ist gar nicht müde. Er ist glücklich.",
+      "en": "Max wakes up. It is already bright. He gets up. It is not late. Max likes the morning. He drinks his own coffee. Then he wants to lead his dog. He brings a ball with him. He must know exactly where they can play. Max also wants to speak with his friend Lena. They talk about the world. Max is not tired at all. He is happy."
+    },
+    "story_F": {
+      "de": "Mia wacht auf. Es ist bereits hell. Sie steht auf. Es ist nicht spät. Mia mag den Morgen. Sie trinkt ihren eigenen Kaffee. Dann will sie ihren Hund führen. Sie bringt einen Ball mit. Sie muss genau wissen, wo sie spielen können. Mia möchte auch mit ihrer Freundin Lena sprechen. Sie sprechen über die Welt. Mia ist gar nicht müde. Sie ist glücklich.",
+      "en": "Mia wakes up. It is already bright. She gets up. It is not late. Mia likes the morning. She drinks her own coffee. Then she wants to lead her dog. She brings a ball with her. She must know exactly where they can play. Mia also wants to speak with her friend Lena. They talk about the world. Mia is not tired at all. She is happy."
+    }
+  },
+  {
+    "batch_id": 18,
+    "target_words": [
+      "möglich",
+      "das Prozent",
+      "während",
+      "einige",
+      "dafür",
+      "kurz",
+      "richtig",
+      "stark",
+      "brauchen",
+      "die Hand"
+    ],
+    "image_prompt": "A person, viewed from a slightly elevated, distant perspective, is in a room filled with several moving boxes. The person is attempting to lift a large, heavy carton, showing clear physical effort. Another person is entering the frame, extending a helping hand. The scene emphasizes teamwork and overcoming a challenge. The main character's features are indistinct or silhouette-based to maintain gender neutrality.",
+    "story_M": {
+      "de": "{{HERO}} hat heute viel zu tun. Er muss einige schwere Kartons tragen. Es ist richtig schwer! Allein ist das kaum möglich. Er braucht unbedingt Hilfe. Mit seiner Hand versucht er, einen Karton zu heben. Kurz danach kommt sein Freund, Thomas. Thomas ist stark und hilft ihm. Während sie zusammenarbeiten, sprechen sie. Sie schaffen es zu hundert Prozent! {{HERO}} ist dafür sehr froh.",
+      "en": "{{HERO}} has a lot to do today. He has to carry some heavy boxes. It's really heavy! Alone, that's hardly possible. He absolutely needs help. With his hand, he tries to lift a box. Shortly after, his friend, Thomas, comes. Thomas is strong and helps him. While they work together, they talk. They manage it one hundred percent! {{HERO}} is very happy about that."
+    },
+    "story_F": {
+      "de": "{{HERO}} hat heute viel zu tun. Sie muss einige schwere Kartons tragen. Es ist richtig schwer! Allein ist das kaum möglich. Sie braucht unbedingt Hilfe. Mit ihrer Hand versucht sie, einen Karton zu heben. Kurz danach kommt ihre Freundin, Anna. Anna ist stark und hilft ihr. Während sie zusammenarbeiten, sprechen sie. Sie schaffen es zu hundert Prozent! {{HERO}} ist dafür sehr froh.",
+      "en": "{{HERO}} has a lot to do today. She has to carry some heavy boxes. It's really heavy! Alone, that's hardly possible. She absolutely needs help. With her hand, she tries to lift a box. Shortly after, her friend, Anna, comes. Anna is strong and helps her. While they work together, they talk. They manage it one hundred percent! {{HERO}} is very happy about that."
+    }
+  },
+  {
+    "batch_id": 19,
+    "target_words": [
+      "etwa",
+      "weitere (r",
+      "das Ende",
+      "schreiben",
+      "solch",
+      "nie",
+      "der Fall",
+      "schön",
+      "wirklich",
+      "denen"
+    ],
+    "image_prompt": "A distant shot of a train traveling through a vibrant green countryside under a clear sky. A small, peaceful village with traditional houses is visible in the background, nestled among trees. Through one of the train windows, a subtle, indistinct silhouette of a person can be seen looking out, their gender not apparent.",
+    "story_M": {
+      "de": "{{HERO}} sitzt in einem Zug. Er fährt zu einem schönen Ort. Die Reise dauert etwa zwei Stunden. Er sieht viele weitere grüne Felder. Er denkt: \"Das ist wirklich schön!\" Am Ende der Fahrt kommt er in ein kleines Dorf. Er möchte dort einen Brief schreiben. Er hat solch einen friedlichen Ort nie zuvor gesehen. Ist das der Fall? Ja, es ist ein sehr ruhiger Ort. Er ist wirklich froh. Die Menschen, denen er begegnet, sind sehr nett.",
+      "en": "{{HERO}} sits on a train. He is traveling to a beautiful place. The journey lasts about two hours. He sees many more green fields. He thinks: \"That is really beautiful!\" At the end of the journey, he arrives in a small village. He wants to write a letter there. He has never seen such a peaceful place before. Is that the case? Yes, it is a very quiet place. He is really happy. The people he meets are very nice."
+    },
+    "story_F": {
+      "de": "{{HERO}} sitzt in einem Zug. Sie fährt zu einem schönen Ort. Die Reise dauert etwa zwei Stunden. Sie sieht viele weitere grüne Felder. Sie denkt: \"Das ist wirklich schön!\" Am Ende der Fahrt kommt sie in ein kleines Dorf. Sie möchte dort einen Brief schreiben. Sie hat solch einen friedlichen Ort nie zuvor gesehen. Ist das der Fall? Ja, es ist ein sehr ruhiger Ort. Sie ist wirklich froh. Die Menschen, denen sie begegnet, sind sehr nett.",
+      "en": "{{HERO}} sits on a train. She is traveling to a beautiful place. The journey lasts about two hours. She sees many more green fields. She thinks: \"That is really beautiful!\" At the end of the journey, she arrives in a small village. She wants to write a letter there. She has never seen such a peaceful place before. Is that the case? Yes, it is a very quiet place. She is really happy. The people she meets are very nice."
+    }
+  },
+  {
+    "batch_id": 20,
+    "target_words": [
+      "nennen",
+      "warum",
+      "ziehen",
+      "das Wort",
+      "darauf",
+      "eben",
+      "die Seite",
+      "das Teil",
+      "jung",
+      "vier"
+    ],
+    "image_prompt": "A distant shot of a cozy room filled with moving boxes. Sunlight streams through a window, illuminating dust motes. In the foreground, a stack of four packed boxes. In the middle ground, a person sits on the floor, holding an open, aged notebook, looking at one of its pages with a thoughtful, soft smile. The person's silhouette is visible against the light. The room suggests a mix of nostalgia and new beginnings.",
+    "story_M": {
+      "de": "{{HERO}} ist ein junger Mann. Er ist vierundzwanzig Jahre alt. Er muss bald umziehen. Er packt seine Kisten. In einer Kiste findet er ein altes Notizbuch. Er schlägt die Seite auf. Er sieht ein Wort: \"Zukunft\". Er fragt sich: \"Warum habe ich dieses Wort hier geschrieben?\" Er erinnert sich an ein kleines, kaputtes Teil, das er damals darauf geklebt hat. Es war eben ein Spiel von früher. Sein bester Freund nannte ihn damals oft \"Träumer\". {{HERO}} muss schmunzeln. Er hat vier Kisten schon gepackt.",
+      "en": "{{HERO}} is a young man. He is twenty-four years old. He has to move soon. He is packing his boxes. In one box, he finds an old notebook. He opens the page. He sees a word: \"Future\". He asks himself: \"Why did I write this word here?\" He remembers a small, broken part that he had glued onto it back then. It was just a game from earlier. His best friend often called him \"Dreamer\" back then. {{HERO}} has to smile. He has already packed four boxes."
+    },
+    "story_F": {
+      "de": "{{HERO}} ist eine junge Frau. Sie ist vierundzwanzig Jahre alt. Sie muss bald umziehen. Sie packt ihre Kisten. In einer Kiste findet sie ein altes Notizbuch. Sie schlägt die Seite auf. Sie sieht ein Wort: \"Zukunft\". Sie fragt sich: \"Warum habe ich dieses Wort hier geschrieben?\" Sie erinnert sich an ein kleines, kaputtes Teil, das sie damals darauf geklebt hat. Es war eben ein Spiel von früher. Ihre beste Freundin nannte sie damals oft \"Träumerin\". {{HERO}} muss schmunzeln. Sie hat vier Kisten schon gepackt.",
+      "en": "{{HERO}} is a young woman. She is twenty-four years old. She has to move soon. She is packing her boxes. In one box, she finds an old notebook. She opens the page. She sees a word: \"Future\". She asks herself: \"Why did I write this word here?\" She remembers a small, broken part that she had glued onto it back then. It was just a game from earlier. Her best friend often called her \"Dreamer\" back then. {{HERO}} has to smile. She has already packed four boxes."
+    }
+  },
+  {
+    "batch_id": 21,
+    "target_words": [
+      "besser",
+      "fast",
+      "schnell",
+      "die Stadt",
+      "spielen",
+      "zwar",
+      "der Euro",
+      "die Arbeit",
+      "Million",
+      "das Problem"
+    ],
+    "image_prompt": "A distant, silhouette-based shot of a person standing in a bustling modern city square at dusk, looking towards a brightly lit sports field in the distance. Tall office buildings line the background. The scene conveys a sense of new beginnings, urban life, and a touch of hopeful solitude. Soft, warm streetlights are starting to illuminate the scene.",
+    "story_M": {
+      "de": "{{HERO}} ist neu in der Stadt. Er sucht Arbeit. Er findet schnell eine gute Arbeit. Er arbeitet jetzt in einem Büro. Die Arbeit ist zwar manchmal schwer, aber {{HERO}} mag sie. Er verdient Euro. Er spart fast alles. Er träumt nicht von einer Million Euro, aber von einem guten Leben. Ein kleines Problem hat er aber: Er möchte Fußball spielen, aber er kennt noch niemanden. Er hofft, dass es bald besser wird.",
+      "en": "{{HERO}} is new in the city. He is looking for work. He quickly finds a good job. He now works in an office. The work is sometimes difficult, it's true, but {{HERO}} likes it. He earns Euros. He saves almost everything. He doesn't dream of a million Euros, but of a good life. But he has a small problem: He wants to play soccer, but he doesn't know anyone yet. He hopes that it will get better soon."
+    },
+    "story_F": {
+      "de": "{{HERO}} ist neu in der Stadt. Sie sucht Arbeit. Sie findet schnell eine gute Arbeit. Sie arbeitet jetzt in einem Büro. Die Arbeit ist zwar manchmal schwer, aber {{HERO}} mag sie. Sie verdient Euro. Sie spart fast alles. Sie träumt nicht von einer Million Euro, aber von einem guten Leben. Ein kleines Problem hat sie aber: Sie möchte Fußball spielen, aber sie kennt noch niemanden. Sie hofft, dass es bald besser wird.",
+      "en": "{{HERO}} is new in the city. She is looking for work. She quickly finds a good job. She now works in an office. The work is sometimes difficult, it's true, but {{HERO}} likes it. She earns Euros. She saves almost everything. She doesn't dream of a million Euros, but of a good life. But she has a small problem: She wants to play soccer, but she doesn't know anyone yet. She hopes that it will get better soon."
+    }
+  },
+  {
+    "batch_id": 22,
+    "target_words": [
+      "verstehen",
+      "bekommen",
+      "meinen",
+      "davon",
+      "fahren",
+      "kennen",
+      "dich",
+      "die Mutter",
+      "die Woche",
+      "der Weg"
+    ],
+    "image_prompt": "A close-up of a person's hands holding and reading an old letter. The background shows a blurry window with a long, winding road stretching into the distance under a clear sky. The person is represented by a silhouette or seen from a first-person perspective, making their gender ambiguous.",
+    "story_M": {
+      "de": "HERO ist glücklich. Er bekommt einen Brief von seiner Mutter. Sie schreibt: \"Lieber HERO, ich vermisse dich!\" HERO liest den Brief. Er muss alles verstehen. Er meint, er muss sie besuchen. Er will diese Woche zu ihr fahren. Der Weg ist lang, aber HERO kennt ihn gut. Er freut sich schon darauf.",
+      "en": "HERO is happy. He receives a letter from his mother. She writes: \"Dear HERO, I miss you!\" HERO reads the letter. He has to understand everything. He thinks he must visit her. He wants to drive to her this week. The way is long, but HERO knows it well. He is already looking forward to it."
+    },
+    "story_F": {
+      "de": "HERO ist glücklich. Sie bekommt einen Brief von ihrer Mutter. Sie schreibt: \"Liebe HERO, ich vermisse dich!\" HERO liest den Brief. Sie muss alles verstehen. Sie meint, sie muss sie besuchen. Sie will diese Woche zu ihr fahren. Der Weg ist lang, aber HERO kennt ihn gut. Sie freut sich schon darauf.",
+      "en": "HERO is happy. She receives a letter from her mother. She writes: \"Dear HERO, I miss you!\" HERO reads the letter. She has to understand everything. She thinks she must visit her. She wants to drive to her this week. The way is long, but HERO knows it well. She is already looking forward to it."
+    }
+  },
+  {
+    "batch_id": 23,
+    "target_words": [
+      "weiter",
+      "das Auge",
+      "oft",
+      "Leute",
+      "allerdings",
+      "sogar",
+      "jedoch",
+      "setzen",
+      "deshalb",
+      "weit"
+    ],
+    "image_prompt": "A peaceful park scene on a sunny day. Green trees, colorful flowers, and birds are visible. A winding path leads through the park. In the foreground, a person's silhouette is sitting on a park bench, looking out at the serene scenery. A small squirrel can be seen nearby on the grass.",
+    "story_M": {
+      "de": "Max ist ein junger Mann. Er mag es, draußen zu sein. Er geht oft in den Park. Sein Auge sieht viele schöne Dinge: Bäume, Blumen und Vögel. Er trifft Leute dort. Er geht weit. Manchmal ist er müde, jedoch ist er immer glücklich. Er mag die frische Luft, deshalb geht er weiter, auch wenn es kühl ist. Allerdings ist es heute sehr sonnig. Er sieht sogar ein kleines Eichhörnchen. Nach einer Stunde setzt er sich auf eine Bank.",
+      "en": "Max is a young man. He likes to be outside. He often goes to the park. His eye sees many beautiful things: trees, flowers, and birds. He meets people there. He walks far. Sometimes he is tired, however he is always happy. He likes the fresh air, therefore he walks on, even when it is cool. However, today it is very sunny. He even sees a small squirrel. After an hour, he sits down on a bench."
+    },
+    "story_F": {
+      "de": "Mia ist eine junge Frau. Sie mag es, draußen zu sein. Sie geht oft in den Park. Ihr Auge sieht viele schöne Dinge: Bäume, Blumen und Vögel. Sie trifft Leute dort. Sie geht weit. Manchmal ist sie müde, jedoch ist sie immer glücklich. Sie mag die frische Luft, deshalb geht sie weiter, auch wenn es kühl ist. Allerdings ist es heute sehr sonnig. Sie sieht sogar ein kleines Eichhörnchen. Nach einer Stunde setzt sie sich auf eine Bank.",
+      "en": "Mia is a young woman. She likes to be outside. She often goes to the park. Her eye sees many beautiful things: trees, flowers, and birds. She meets people there. She walks far. Sometimes she is tired, however she is always happy. She likes the fresh air, therefore she walks on, even when it is cool. However, today it is very sunny. She even sees a small squirrel. After an hour, she sits down on a bench."
+    }
+  },
+  {
+    "batch_id": 24,
+    "target_words": [
+      "sitzen",
+      "der Vater",
+      "dein",
+      "arbeiten",
+      "das Geld",
+      "das Unternehmen",
+      "nächste (r",
+      "erklären",
+      "klar",
+      "der Doktor"
+    ],
+    "image_prompt": "A child sits at a simple wooden table, focused on an open book. A father figure approaches the table from behind the child. The scene is set in a cozy, softly lit home environment. The child's face is not visible, showing only their back or a silhouette, keeping the identity ambiguous. Warm, inviting atmosphere.",
+    "story_M": {
+      "de": "Max sitzt. Er sitzt am Tisch. Sein Vater kommt. Der Vater muss arbeiten. Er arbeitet für ein großes Unternehmen. Max fragt: \"Was machst du, Papa?\" Sein Vater erklärt: \"Ich arbeite für das Geld.\" Max fragt: \"Was ist das Geld?\" Der Vater sagt: \"Geld ist wichtig. Und, ist dein Buch klar?\" Max lernt für die Schule. \"Ja, mein Buch ist klar.\" Der Vater sagt: \"Nächste Woche muss ich zu einem Doktor gehen.\" Max fragt: \"Ist alles klar, Papa?\" Der Vater nickt. \"Ja, alles klar.\"",
+      "en": "Max sits. He sits at the table. His father comes. The father has to work. He works for a large company. Max asks: \"What are you doing, Papa?\" His father explains: \"I work for money.\" Max asks: \"What is money?\" The father says: \"Money is important. And, is your book clear?\" Max is studying for school. \"Yes, my book is clear.\" The father says: \"Next week I have to go to a doctor.\" Max asks: \"Is everything clear, Papa?\" The father nods. \"Yes, everything is clear.\""
+    },
+    "story_F": {
+      "de": "Lena sitzt. Sie sitzt am Tisch. Ihr Vater kommt. Der Vater muss arbeiten. Er arbeitet für ein großes Unternehmen. Lena fragt: \"Was machst du, Papa?\" Ihr Vater erklärt: \"Ich arbeite für das Geld.\" Lena fragt: \"Was ist das Geld?\" Der Vater sagt: \"Geld ist wichtig. Und, ist dein Buch klar?\" Lena lernt für die Schule. \"Ja, mein Buch ist klar.\" Der Vater sagt: \"Nächste Woche muss ich zu einem Doktor gehen.\" Lena fragt: \"Ist alles klar, Papa?\" Der Vater nickt. \"Ja, alles klar.\"",
+      "en": "Lena sits. She sits at the table. Her father comes. The father has to work. He works for a large company. Lena asks: \"What are you doing, Papa?\" Her father explains: \"I work for money.\" Lena asks: \"What is money?\" The father says: \"Money is important. And, is your book clear?\" Lena is studying for school. \"Yes, my book is clear.\" The father says: \"Next week I have to go to a doctor.\" Lena asks: \"Is everything clear, Papa?\" The father nods. \"Yes, everything is clear.\""
+    }
+  },
+  {
+    "batch_id": 25,
+    "target_words": [
+      "das Paar",
+      "das Recht",
+      "wegen",
+      "dir",
+      "das Wasser",
+      "bestehen",
+      "versuchen",
+      "der Punkt",
+      "der Grund",
+      "der Kopf"
+    ],
+    "image_prompt": "A desk scene with books, notes, and a glass of water. The light is dim, suggesting late-night studying. A silhouette of a person sits at the desk, leaning slightly, with their head in their hand, conveying tiredness but also determination. The overall atmosphere is quiet and focused. The background is slightly blurred.",
+    "story_M": {
+      "de": "{{HERO}} hat einen wichtigen Tag. Er muss eine schwere Prüfung bestehen. Es ist nicht leicht für ihn, aber er versucht es. Sein Kopf ist müde, wegen des vielen Lernens. Der Punkt ist, er will unbedingt erfolgreich sein. Der Grund dafür ist sein großer Traum. Er trinkt viel Wasser, um wach zu bleiben. Sein Paar ist sehr stolz auf ihn. Er sagt zu sich selbst: \"Ich habe das Recht auf Erfolg! Ich schaffe das, dir zeige ich es!\"",
+      "en": "{{HERO}} has an important day. He has to pass a difficult exam. It is not easy for him, but he tries it. His head is tired because of all the studying. The point is, he really wants to be successful. The reason for this is his big dream. He drinks a lot of water to stay awake. His partner is very proud of him. He says to himself: \"I have the right to success! I can do this, I'll show you!\""
+    },
+    "story_F": {
+      "de": "{{HERO}} hat einen wichtigen Tag. Sie muss eine schwere Prüfung bestehen. Es ist nicht leicht für sie, aber sie versucht es. Ihr Kopf ist müde, wegen des vielen Lernens. Der Punkt ist, sie will unbedingt erfolgreich sein. Der Grund dafür ist ihr großer Traum. Sie trinkt viel Wasser, um wach zu bleiben. Ihr Paar ist sehr stolz auf sie. Sie sagt zu sich selbst: \"Ich habe das Recht auf Erfolg! Ich schaffe das, dir zeige ich es!\"",
+      "en": "{{HERO}} has an important day. She has to pass a difficult exam. It is not easy for her, but she tries it. Her head is tired because of all the studying. The point is, she really wants to be successful. The reason for this is her big dream. She drinks a lot of water to stay awake. Her partner is very proud of her. She says to herself: \"I have the right to success! I can do this, I'll show you!\""
+    }
+  },
+  {
+    "batch_id": 26,
+    "target_words": [
+      "beginnen",
+      "laufen",
+      "das Bild",
+      "verschieden",
+      "der Name",
+      "die Aufgabe",
+      "schwer",
+      "entsprechen",
+      "treffen",
+      "die Art"
+    ],
+    "image_prompt": "First-person perspective looking out from a student's desk in a brightly lit, modern German classroom. A large blackboard at the front displays a prominent, interesting picture and several associated German words, suggesting a matching or identification task. Other student desks are visible in the foreground and periphery, indicating a shared learning environment. The scene captures the beginning of a lesson or a new challenge.",
+    "story_M": {
+      "de": "{{HERO}} beginnt seinen Deutschkurs. Es ist Montag. Er geht zum Klassenzimmer. Viele Studenten laufen in den Raum. {{HERO}} sucht seinen Platz. An der Tafel gibt es ein großes Bild. Das Bild ist interessant. Heute haben sie eine neue Aufgabe. Die Aufgabe ist schwer, denkt {{HERO}}. Er muss verschiedene Wörter den Bildern zuordnen. Sein Name ist {{HERO}} und er mag Herausforderungen. Er muss die richtige Antwort finden, die dem Bild entspricht. Nach dem Kurs trifft er seinen Freund Leo. Sie sprechen über die Art der Aufgabe. \"Diese Art von Aufgaben ist manchmal schwer,\" sagt Leo.",
+      "en": "{{HERO}} begins his German course. It's Monday. He goes to the classroom. Many students walk into the room. {{HERO}} looks for his seat. On the board, there is a large picture. The picture is interesting. Today they have a new task. The task is difficult, thinks {{HERO}}. He has to match various words to the pictures. His name is {{HERO}} and he likes challenges. He has to find the correct answer that corresponds to the picture. After the class, he meets his friend Leo. They talk about the type of task. \"This type of task is sometimes difficult,\" says Leo."
+    },
+    "story_F": {
+      "de": "{{HERO}} beginnt ihren Deutschkurs. Es ist Montag. Sie geht zum Klassenzimmer. Viele Studentinnen laufen in den Raum. {{HERO}} sucht ihren Platz. An der Tafel gibt es ein großes Bild. Das Bild ist interessant. Heute haben sie eine neue Aufgabe. Die Aufgabe ist schwer, denkt {{HERO}}. Sie muss verschiedene Wörter den Bildern zuordnen. Ihr Name ist {{HERO}} und sie mag Herausforderungen. Sie muss die richtige Antwort finden, die dem Bild entspricht. Nach dem Kurs trifft sie ihre Freundin Lena. Sie sprechen über die Art der Aufgabe. \"Diese Art von Aufgaben ist manchmal schwer,\" sagt Lena.",
+      "en": "{{HERO}} begins her German course. It's Monday. She goes to the classroom. Many students walk into the room. {{HERO}} looks for her seat. On the board, there is a large picture. The picture is interesting. Today they have a new task. The task is difficult, thinks {{HERO}}. She has to match various words to the pictures. Her name is {{HERO}} and she likes challenges. She has to find the correct answer that corresponds to the picture. After the class, she meets her friend Lena. They talk about the type of task. \"This type of task is sometimes difficult,\" says Lena."
+    }
+  },
+  {
+    "batch_id": 27,
+    "target_words": [
+      "wohl",
+      "die Geschichte",
+      "erzählen",
+      "entstehen",
+      "sicher",
+      "neben",
+      "allein",
+      "die Abbildung",
+      "hinter",
+      "besonders"
+    ],
+    "image_prompt": "A cozy, sunlit room. An open book with an intricate illustration lies on a wooden desk. Next to it, a notebook and a pen. The scene is viewed from a slightly elevated, distant angle, showing the room's warm ambiance. A soft shadow or silhouette of a person is seated at the desk, absorbed in reading. The focus is on the book, the notebook, and the peaceful atmosphere of the room.",
+    "story_M": {
+      "de": "Max ist allein in seinem Zimmer. Er liest ein altes Buch. Die Geschichte ist wohl sehr interessant. Er möchte die Geschichte später seinem Freund erzählen. Neben ihm liegt sein Notizbuch. Darin möchte er eine neue Geschichte entstehen lassen. Er ist sicher, dass seine Geschichte gut wird. Es gibt eine schöne Abbildung im Buch. Hinter der Abbildung sieht er ein kleines Detail. Das findet er besonders spannend. Max ist glücklich.",
+      "en": "Max is alone in his room. He is reading an old book. The story is probably very interesting. He wants to tell the story to his friend later. Next to him lies his notebook. In it, he wants to create a new story. He is sure that his story will be good. There is a beautiful illustration in the book. Behind the illustration, he sees a small detail. He finds that particularly exciting. Max is happy."
+    },
+    "story_F": {
+      "de": "Lena ist allein in ihrem Zimmer. Sie liest ein altes Buch. Die Geschichte ist wohl sehr interessant. Sie möchte die Geschichte später ihrer Freundin erzählen. Neben ihr liegt ihr Notizbuch. Darin möchte sie eine neue Geschichte entstehen lassen. Sie ist sicher, dass ihre Geschichte gut wird. Es gibt eine schöne Abbildung im Buch. Hinter der Abbildung sieht sie ein kleines Detail. Das findet sie besonders spannend. Lena ist glücklich.",
+      "en": "Lena is alone in her room. She is reading an old book. The story is probably very interesting. She wants to tell the story to her friend later. Next to her lies her notebook. In it, she wants to create a new story. She is sure that her story will be good. There is a beautiful illustration in the book. Behind the illustration, she sees a small detail. She finds that particularly exciting. Lena is happy."
+    }
+  },
+  {
+    "batch_id": 28,
+    "target_words": [
+      "tragen",
+      "kaum",
+      "der Freund",
+      "fünf",
+      "scheinen",
+      "die Stunde",
+      "aussehen",
+      "gern",
+      "überhaupt",
+      "bestimmt"
+    ],
+    "image_prompt": "A person struggles to carry a large, heavy cardboard box up a short flight of stairs. The scene is brightly lit by sunshine, suggesting a nice day. Another person stands at the top of the stairs, smiling encouragingly. The focus is on the action and the heavy box. The protagonist is depicted from behind, in silhouette, or from a distant perspective, making their gender ambiguous.",
+    "story_M": {
+      "de": "Hallo, mein Name ist {{HERO}}.\n{{HERO}} muss heute einen großen Karton tragen. Er ist schwer. Kaum kann er ihn die Treppe hochbringen. Er wartet auf seinen Freund, Tom. Sie wollen zusammen fünf Stunden lernen. Es scheint ein langer Tag zu werden. Sein Freund Tom sieht immer so motiviert aus. {{HERO}} mag es gern, mit Tom zu lernen. Tom hilft ihm überhaupt immer. Es wird bestimmt nicht so schlimm sein.",
+      "en": "Hello, my name is {{HERO}}.\n{{HERO}} has to carry a big box today. It is heavy. He can barely bring it up the stairs. He is waiting for his friend, Tom. They want to study together for five hours. It seems like it will be a long day. His friend Tom always looks so motivated. {{HERO}} likes to learn with Tom. Tom always helps him anyway. It will certainly not be so bad."
+    },
+    "story_F": {
+      "de": "Hallo, mein Name ist {{HERO}}.\n{{HERO}} muss heute einen großen Karton tragen. Er ist schwer. Kaum kann sie ihn die Treppe hochbringen. Sie wartet auf ihre Freundin, Anna. Sie wollen zusammen fünf Stunden lernen. Es scheint ein langer Tag zu werden. Ihre Freundin Anna sieht immer so motiviert aus. {{HERO}} mag es gern, mit Anna zu lernen. Anna hilft ihr überhaupt immer. Es wird bestimmt nicht so schlimm sein.",
+      "en": "Hello, my name is {{HERO}}.\n{{HERO}} has to carry a big box today. It is heavy. She can barely bring it up the stairs. She is waiting for her friend, Anna. They want to study together for five hours. It seems like it will be a long day. Her friend Anna always looks so motivated. {{HERO}} likes to learn with Anna. Anna always helps her anyway. It will certainly not be so bad."
+    }
+  },
+  {
+    "batch_id": 29,
+    "target_words": [
+      "sowie",
+      "der Professor",
+      "darüber",
+      "deren",
+      "schaffen",
+      "damals",
+      "erhalten",
+      "lernen",
+      "frei",
+      "der Wert"
+    ],
+    "image_prompt": "A silhouette of a student, seen from behind, sitting at a wooden desk in a sunlit, classic university classroom. In front of them, a distinguished professor (also silhouetted or with obscured features) gestures towards a blackboard covered in German grammar and vocabulary. Old books and historical documents are stacked neatly on the desk next to the student. The atmosphere is quiet and focused, emphasizing the act of deep learning and discovery.",
+    "story_M": {
+      "de": "Max ist ein junger Mann. Er wollte Deutsch lernen. Damals war er neu in der Stadt. Er traf den Professor Müller. Der Professor sprach darüber, wie wichtig es ist, Sprachen zu können. Max musste viel schaffen und fleißig sein. Er hat viele Grammatikregeln sowie Vokabeln gelernt. Der Professor hatte auch alte Dokumente, deren Geschichte Max sehr interessierte. Bald hat Max gute Noten erhalten. Er war sehr stolz. Endlich fühlte er sich frei, weil er Deutsch sprechen konnte. Er verstand jetzt, dass der Wert der Sprache sehr groß ist.",
+      "en": "Max is a young man. He wanted to learn German. At that time, he was new in the city. He met Professor Müller. The professor spoke about how important it is to be able to speak languages. Max had to work a lot and be diligent. He learned many grammar rules as well as vocabulary. The professor also had old documents whose history interested Max very much. Soon Max received good grades. He was very proud. Finally, he felt free because he could speak German. He now understood that the value of the language is very great."
+    },
+    "story_F": {
+      "de": "Mia ist eine junge Frau. Sie wollte Deutsch lernen. Damals war sie neu in der Stadt. Sie traf den Professor Müller. Der Professor sprach darüber, wie wichtig es ist, Sprachen zu können. Mia musste viel schaffen und fleißig sein. Sie hat viele Grammatikregeln sowie Vokabeln gelernt. Der Professor hatte auch alte Dokumente, deren Geschichte Mia sehr interessierte. Bald hat Mia gute Noten erhalten. Sie war sehr stolz. Endlich fühlte sie sich frei, weil sie Deutsch sprechen konnte. Sie verstand jetzt, dass der Wert der Sprache sehr groß ist.",
+      "en": "Mia is a young woman. She wanted to learn German. At that time, she was new in the city. She met Professor Müller. The professor spoke about how important it is to be able to speak languages. Mia had to work a lot and be diligent. She learned many grammar rules as well as vocabulary. The professor also had old documents whose history interested Mia very much. Soon Mia received good grades. She was very proud. Finally, she felt free because she could speak German. She now understood that the value of the language is very great."
+    }
+  },
+  {
+    "batch_id": 30,
+    "target_words": [
+      "beziehungsweise",
+      "daran",
+      "suchen",
+      "Europa",
+      "gemeinsam",
+      "rund",
+      "die Zahl",
+      "das Thema",
+      "handeln",
+      "das Buch"
+    ],
+    "image_prompt": "A close-up shot of hands, gender-neutral, holding an old, open book. The book displays an antique map of Europe and some text with a prominent number. In the blurred background, a warm light suggests a cozy room with bookshelves or a window overlooking a distant, imagined landscape, hinting at dreams of travel and exploration.",
+    "story_M": {
+      "de": "Max sucht ein Buch in seinem Regal. Das Thema ist Europa. Er will mehr über Europa lernen. Das Buch, das er findet, ist alt. Es handelt von verschiedenen Städten, beziehungsweise von vielen Reisen. Max blättert darin. Er sieht eine interessante Zahl: Rund 27 Länder gehören zu einer großen Gemeinschaft. Max denkt daran, bald selbst nach Europa zu reisen. Er möchte gemeinsam mit seinem Freund viele Orte sehen. Es ist sein Traum.",
+      "en": "Max is looking for a book on his shelf. The topic is Europe. He wants to learn more about Europe. The book he finds is old. It deals with different cities, or rather, many journeys. Max leafs through it. He sees an interesting number: Around 27 countries belong to a big community. Max thinks about traveling to Europe himself soon. He wants to see many places together with his friend. It is his dream."
+    },
+    "story_F": {
+      "de": "Lisa sucht ein Buch in ihrem Regal. Das Thema ist Europa. Sie will mehr über Europa lernen. Das Buch, das sie findet, ist alt. Es handelt von verschiedenen Städten, beziehungsweise von vielen Reisen. Lisa blättert darin. Sie sieht eine interessante Zahl: Rund 27 Länder gehören zu einer großen Gemeinschaft. Lisa denkt daran, bald selbst nach Europa zu reisen. Sie möchte gemeinsam mit ihrer Freundin viele Orte sehen. Es ist ihr Traum.",
+      "en": "Lisa is looking for a book on her shelf. The topic is Europe. She wants to learn more about Europe. The book she finds is old. It deals with different cities, or rather, many journeys. Lisa leafs through it. She sees an interesting number: Around 27 countries belong to a big community. Lisa thinks about traveling to Europe herself soon. She wants to see many places together with her friend. It is her dream."
+    }
+  },
+  {
+    "batch_id": 31,
+    "target_words": [
+      "bisschen",
+      "deutlich",
+      "anders",
+      "politisch",
+      "lesen",
+      "der Blick",
+      "die Form",
+      "einzeln",
+      "erreichen",
+      "vergehen"
+    ],
+    "image_prompt": "A warm, soft light illuminates a cozy room. On a simple wooden table, an open newspaper lies beside a steaming cup of coffee. A pair of hands, blurred or silhouetted, holds the newspaper, indicating a person deeply absorbed in reading. The overall scene conveys a quiet, contemplative atmosphere with a sense of time passing gently.",
+    "story_M": {
+      "de": "Jeden Morgen liest {{HERO}} die Zeitung. Er trinkt Kaffee und liest ein bisschen. Heute sieht er einen Artikel. Er ist anders. Der Artikel ist politisch. {{HERO}} liest ihn deutlich. Sein Blick geht über die Worte. Er sieht die Form der Buchstaben. Jedes Wort ist einzeln und wichtig. Die Zeit vergeht. {{HERO}} möchte den Sinn erreichen.",
+      "en": "Every morning {{HERO}} reads the newspaper. He drinks coffee and reads a little bit. Today he sees an article. It is different. The article is political. {{HERO}} reads it clearly. His gaze goes over the words. He sees the form of the letters. Every word is individual and important. Time passes. {{HERO}} wants to grasp the meaning."
+    },
+    "story_F": {
+      "de": "Jeden Morgen liest {{HERO}} die Zeitung. Sie trinkt Kaffee und liest ein bisschen. Heute sieht sie einen Artikel. Er ist anders. Der Artikel ist politisch. {{HERO}} liest ihn deutlich. Ihr Blick geht über die Worte. Sie sieht die Form der Buchstaben. Jedes Wort ist einzeln und wichtig. Die Zeit vergeht. {{HERO}} möchte den Sinn erreichen.",
+      "en": "Every morning {{HERO}} reads the newspaper. She drinks coffee and reads a little bit. Today she sees an article. It is different. The article is political. {{HERO}} reads it clearly. Her gaze goes over the words. She sees the form of the letters. Every word is individual and important. Time passes. {{HERO}} wants to grasp the meaning."
+    }
+  },
+  {
+    "batch_id": 32,
+    "target_words": [
+      "leicht",
+      "je",
+      "verlieren",
+      "beste (r",
+      "bilden",
+      "der Monat",
+      "die Lösung",
+      "die Sache",
+      "bekannt",
+      "das Ziel"
+    ],
+    "image_prompt": "A silhouette of a person standing at the start of a winding path, looking towards a bright, distant goal on a hill. The scene is bathed in soft, hopeful morning light, emphasizing determination and the journey ahead. The person's gender is not discernible.",
+    "story_M": {
+      "de": "HERO hat ein großes Ziel. Es ist nicht immer leicht für ihn. Er möchte nicht verlieren. Er sucht immer die beste Lösung. Jeden Monat bildet er einen neuen Plan. Die Sache ist bekannt: Man muss fleißig sein, um sein Ziel zu erreichen. Sein Ziel ist sehr wichtig für ihn. Er hat je einen kleinen Schritt gemacht.",
+      "en": "HERO has a big goal. It is not always easy for him. He doesn't want to lose. He always looks for the best solution. Every month he forms a new plan. The thing is known: One must be diligent to reach his goal. His goal is very important to him. He has always made a small step."
+    },
+    "story_F": {
+      "de": "HERO hat ein großes Ziel. Es ist nicht immer leicht für sie. Sie möchte nicht verlieren. Sie sucht immer die beste Lösung. Jeden Monat bildet sie einen neuen Plan. Die Sache ist bekannt: Man muss fleißig sein, um ihr Ziel zu erreichen. Ihr Ziel ist sehr wichtig für sie. Sie hat je einen kleinen Schritt gemacht.",
+      "en": "HERO has a big goal. It is not always easy for her. She doesn't want to lose. She always looks for the best solution. Every month she forms a new plan. The thing is known: One must be diligent to reach her goal. Her goal is very important to her. She has always made a small step."
+    }
+  },
+  {
+    "batch_id": 33,
+    "target_words": [
+      "steigen",
+      "eher",
+      "essen",
+      "die Minute",
+      "die Nacht",
+      "der Platz",
+      "schlecht",
+      "das Spiel",
+      "die Familie",
+      "jemand"
+    ],
+    "image_prompt": "A melancholic, atmospheric shot from inside a dimly lit public bus at night. Rain streaks down the window, blurring the dark urban landscape outside. A few indistinct, distant silhouettes of other passengers are visible further down the aisle. The focus is on the quiet interior and the reflective, rain-streaked window, evoking a feeling of contemplation during a late-night commute.",
+    "story_M": {
+      "de": "Es ist spät in der Nacht. Max ist müde. Er muss in den Bus steigen. Das Wetter ist schlecht. Er hat Hunger, aber er möchte eher nach Hause zu seiner Familie. Er will im Bus nicht essen. Er sucht seinen Platz. Jede Minute im Bus fühlt sich lang an. Jemand im Bus hustet. Max freut sich auf ein Spiel zu Hause.",
+      "en": "It is late at night. Max is tired. He has to get on the bus. The weather is bad. He is hungry, but he would rather go home to his family. He does not want to eat on the bus. He is looking for his seat. Every minute on the bus feels long. Someone on the bus coughs. Max is looking forward to a game at home."
+    },
+    "story_F": {
+      "de": "Es ist spät in der Nacht. Anna ist müde. Sie muss in den Bus steigen. Das Wetter ist schlecht. Sie hat Hunger, aber sie möchte eher nach Hause zu ihrer Familie. Sie will im Bus nicht essen. Sie sucht ihren Platz. Jede Minute im Bus fühlt sich lang an. Jemand im Bus hustet. Anna freut sich auf ein Spiel zu Hause.",
+      "en": "It is late at night. Anna is tired. She has to get on the bus. The weather is bad. She is hungry, but she would rather go home to her family. She does not want to eat on the bus. She is looking for her seat. Every minute on the bus feels long. Someone on the bus coughs. Anna is looking forward to a game at home."
+    }
+  },
+  {
+    "batch_id": 34,
+    "target_words": [
+      "dessen",
+      "fallen",
+      "zehn",
+      "der Preis",
+      "europäisch",
+      "sonst",
+      "der Staat",
+      "helfen",
+      "der Bereich",
+      "tatsächlich"
+    ],
+    "image_prompt": "A person stands in a European city street, looking through the window of a quaint bookstore. The display features a stack of ten books. The person's silhouette is visible from behind, casting a long shadow on the cobblestone street. The lighting is soft and reflective, highlighting the architecture and the book titles. The atmosphere is thoughtful and slightly melancholic, suggesting a moment of contemplation about value and assistance.",
+    "story_M": {
+      "de": "Peter ist ein Mann. Er hat eine Idee. Er möchte zehn europäische Bücher kaufen. Aber der Preis ist zu hoch. Peter wartet. Er hofft, dass der Preis bald fallen wird. Peter arbeitet im sozialen Bereich. Er sieht viele Menschen, die Hilfe brauchen. Er weiß, dass der Staat nicht immer jedem helfen kann. Peter möchte auch selbst helfen. Er sieht einen Mann, dessen Tasche tatsächlich leer ist. Peter gibt ihm etwas Geld. Sonst hat der Mann Hunger.",
+      "en": "Peter is a man. He has an idea. He wants to buy ten European books. But the price is too high. Peter waits. He hopes that the price will fall soon. Peter works in the social sector. He sees many people who need help. He knows that the state cannot always help everyone. Peter also wants to help himself. He sees a man whose bag is actually empty. Peter gives him some money. Otherwise, the man is hungry."
+    },
+    "story_F": {
+      "de": "Petra ist eine Frau. Sie hat eine Idee. Sie möchte zehn europäische Bücher kaufen. Aber der Preis ist zu hoch. Petra wartet. Sie hofft, dass der Preis bald fallen wird. Petra arbeitet im sozialen Bereich. Sie sieht viele Menschen, die Hilfe brauchen. Sie weiß, dass der Staat nicht immer jedem helfen kann. Petra möchte auch selbst helfen. Sie sieht einen Mann, dessen Tasche tatsächlich leer ist. Petra gibt ihm etwas Geld. Sonst hat der Mann Hunger.",
+      "en": "Petra is a woman. She has an idea. She wants to buy ten European books. But the price is too high. Petra waits. She hopes that the price will fall soon. Petra works in the social sector. She sees many people who need help. She knows that the state cannot always help everyone. Petra also wants to help herself. She sees a man whose bag is actually empty. Petra gives him some money. Otherwise, the man is hungry."
+    }
+  },
+  {
+    "batch_id": 35,
+    "target_words": [
+      "der Ort",
+      "der Abend",
+      "einzig",
+      "die Stelle",
+      "unterschiedlich",
+      "das Gesicht",
+      "die Entwicklung",
+      "die Uhr",
+      "mehrere",
+      "schließen"
+    ],
+    "image_prompt": "An A1-level story: a silhouette of a person stands on an old European city street at dusk. The street is bustling with several people, their faces indistinct. The person looks towards the closed door of a charming cafe or shop. A visible street clock shows it's late evening. The scene conveys a sense of quiet observation and decision.",
+    "story_M": {
+      "de": "HERO ist neu in der Stadt. Es ist Abend. Er ist an einem Ort, den er noch nicht kennt. Für ihn ist es einzig, hier zu sein. Er sucht eine gute Stelle zum Arbeiten. Er hat schon mehrere Geschäfte besucht. Die Gesichter der Menschen waren alle unterschiedlich. Er schaut auf seine Uhr. Die Zeit vergeht schnell. Die Entwicklung seines Plans ist gut. Er muss jetzt die Tür schließen und nach Hause gehen.",
+      "en": "HERO is new in the city. It is evening. He is in a place he doesn't know yet. For him, it is unique to be here. He is looking for a good job. He has already visited several shops. The faces of the people were all different. He looks at his watch. Time passes quickly. The development of his plan is good. He must now close the door and go home."
+    },
+    "story_F": {
+      "de": "HERO ist neu in der Stadt. Es ist Abend. Sie ist an einem Ort, den sie noch nicht kennt. Für sie ist es einzig, hier zu sein. Sie sucht eine gute Stelle zum Arbeiten. Sie hat schon mehrere Geschäfte besucht. Die Gesichter der Menschen waren alle unterschiedlich. Sie schaut auf ihre Uhr. Die Zeit vergeht schnell. Die Entwicklung ihres Plans ist gut. Sie muss jetzt die Tür schließen und nach Hause gehen.",
+      "en": "HERO is new in the city. It is evening. She is in a place she doesn't know yet. For her, it is unique to be here. She is looking for a good job. She has already visited several shops. The faces of the people were all different. She looks at her watch. Time passes quickly. The development of her plan is good. She must now close the door and go home."
+    }
+  },
+  {
+    "batch_id": 36,
+    "target_words": [
+      "schließlich",
+      "legen",
+      "direkt",
+      "daher",
+      "offen",
+      "erkennen",
+      "die Person",
+      "der Moment",
+      "die Schule",
+      "darin"
+    ],
+    "image_prompt": "A bright school corridor with a row of blue lockers. A hand is reaching into an open locker, or placing a book inside. The protagonist is either seen from behind, as a silhouette, or from a first-person perspective, focusing on the action. The scene is clean and well-lit.",
+    "story_M": {
+      "de": "Max ist in der Schule. Er hat seine Tasche. Er geht direkt zu seinem Spind. Sein Spind ist offen. Max will sein Deutschbuch darin legen. Aber er findet es nicht. Daher ist er ein bisschen traurig. Schließlich erkennt er, dass sein Buch auf dem Tisch liegt. In diesem Moment sieht er eine Person, seinen Freund. Er nimmt das Buch und legt es in den Spind.",
+      "en": "Max is at school. He has his bag. He goes directly to his locker. His locker is open. Max wants to put his German book in it. But he can't find it. Therefore, he is a little sad. Finally, he realizes that his book is on the table. At that moment, he sees a person, his friend. He takes the book and puts it in the locker."
+    },
+    "story_F": {
+      "de": "Anna ist in der Schule. Sie hat ihre Tasche. Sie geht direkt zu ihrem Spind. Ihr Spind ist offen. Anna will ihr Deutschbuch darin legen. Aber sie findet es nicht. Daher ist sie ein bisschen traurig. Schließlich erkennt sie, dass ihr Buch auf dem Tisch liegt. In diesem Moment sieht sie eine Person, ihre Freundin. Sie nimmt das Buch und legt es in den Spind.",
+      "en": "Anna is at school. She has her bag. She goes directly to her locker. Her locker is open. Anna wants to put her German book in it. But she can't find it. Therefore, she is a little sad. Finally, she realizes that her book is on the table. At that moment, she sees a person, her friend. She takes the book and puts it in the locker."
+    }
+  },
+  {
+    "batch_id": 37,
+    "target_words": [
+      "das Auto",
+      "niemand",
+      "die Gesellschaft",
+      "warten",
+      "vorstellen",
+      "früh",
+      "treten",
+      "reden",
+      "die Gruppe",
+      "das Ding"
+    ],
+    "image_prompt": "A solitary figure stands by a broken-down car on an empty road, illuminated by the dim light of early morning. The person looks out at the vast, quiet landscape, emphasizing a feeling of detachment from society. In the distance, a small group of people is visible, engaged in lively talk, with one person lightly kicking a small thing on the ground. The scene conveys waiting and contemplation. The main figure is shown from behind or as a silhouette.",
+    "story_M": {
+      "de": "Es ist sehr früh am Morgen. {{HERO}} muss lange warten. Er ist allein, niemand ist da. Sein rotes Auto steht still. {{HERO}} fühlt sich ein bisschen traurig, wie ein Teil, der nicht zur Gesellschaft gehört. Er versucht, sich eine Lösung vorzustellen. Was kann er tun? Plötzlich kommt eine kleine Gruppe von Leuten. Sie reden und lachen. Einer von ihnen tritt gegen ein kleines, rundes Ding auf dem Weg. {{HERO}} überlegt: Soll er zu ihnen gehen?",
+      "en": "It is very early in the morning. {{HERO}} has to wait a long time. He is alone, nobody is there. His red car stands still. {{HERO}} feels a bit sad, like a part that does not belong to society. He tries to imagine a solution. What can he do? Suddenly, a small group of people arrives. They talk and laugh. One of them kicks a small, round thing on the path. {{HERO}} considers: Should he go to them?"
+    },
+    "story_F": {
+      "de": "Es ist sehr früh am Morgen. {{HERO}} muss lange warten. Sie ist allein, niemand ist da. Ihr rotes Auto steht still. {{HERO}} fühlt sich ein bisschen traurig, wie ein Teil, der nicht zur Gesellschaft gehört. Sie versucht, sich eine Lösung vorzustellen. Was kann sie tun? Plötzlich kommt eine kleine Gruppe von Leuten. Sie reden und lachen. Einer von ihnen tritt gegen ein kleines, rundes Ding auf dem Weg. {{HERO}} überlegt: Soll sie zu ihnen gehen?",
+      "en": "It is very early in the morning. {{HERO}} has to wait a long time. She is alone, nobody is there. Her red car stands still. {{HERO}} feels a bit sad, like a part that does not belong to society. She tries to imagine a solution. What can she do? Suddenly, a small group of people arrives. They talk and laugh. One of them kicks a small, round thing on the path. {{HERO}} considers: Should she go to them?"
+    }
+  },
+  {
+    "batch_id": 38,
+    "target_words": [
+      "na",
+      "gewinnen",
+      "zunächst",
+      "damit",
+      "die Tür",
+      "der Schritt",
+      "entwickeln",
+      "meiste",
+      "die Möglichkeit",
+      "der Sinn"
+    ],
+    "image_prompt": "A cozy study room scene. On a wooden desk, an open textbook and a notebook are illuminated by soft, warm light from a window. A slightly ajar door in the background glows, hinting at new opportunities. The focus is on the learning materials and the symbolic open door, with the silhouette of a person sitting at the desk, facing away from the viewer, engaged in study.",
+    "story_M": {
+      "de": "Max lernt Deutsch. Zuerst ist es schwer. Er denkt: \"Na, das ist eine Herausforderung!\" Er übt jeden Tag. Zunächst lernt er viele neue Wörter. Er möchte ein Quiz gewinnen. Das ist eine gute Möglichkeit! Er entwickelt einen Plan, damit er besser wird. Er macht jeden Schritt im Buch. Er öffnet die Tür zu einer neuen Sprache. Er versteht den Sinn des Lernens. Das meiste versteht er jetzt gut. Bald kann er ein kleines Spiel gewinnen.",
+      "en": "Max is learning German. At first, it is difficult. He thinks: \"Well, that's a challenge!\" He practices every day. Initially, he learns many new words. He wants to win a quiz. That is a good opportunity! He develops a plan so that he gets better. He takes every step in the book. He opens the door to a new language. He understands the purpose of learning. He understands most of it well now. Soon he can win a small game."
+    },
+    "story_F": {
+      "de": "Lena lernt Deutsch. Zuerst ist es schwer. Sie denkt: \"Na, das ist eine Herausforderung!\" Sie übt jeden Tag. Zunächst lernt sie viele neue Wörter. Sie möchte ein Quiz gewinnen. Das ist eine gute Möglichkeit! Sie entwickelt einen Plan, damit sie besser wird. Sie macht jeden Schritt im Buch. Sie öffnet die Tür zu einer neuen Sprache. Sie versteht den Sinn des Lernens. Das meiste versteht sie jetzt gut. Bald kann sie ein kleines Spiel gewinnen.",
+      "en": "Lena is learning German. At first, it is difficult. She thinks: \"Well, that's a challenge!\" She practices every day. Initially, she learns many new words. She wants to win a quiz. That is a good opportunity! She develops a plan so that she gets better. She takes every step in the book. She opens the door to a new language. She understands the purpose of learning. She understands most of it well now. Soon she can win a small game."
+    }
+  },
+  {
+    "batch_id": 39,
+    "target_words": [
+      "passieren",
+      "manchmal",
+      "der Vergleich",
+      "das System",
+      "die Rolle",
+      "das Ergebnis",
+      "vergleichen",
+      "voll",
+      "erwarten",
+      "obwohl"
+    ],
+    "image_prompt": "A calm classroom scene, focused on a desk with a textbook open and a test paper. A student's hands are visible on the desk, perhaps holding a pen, indicating concentration. In the background, other students are blurred, creating a sense of a shared learning environment. Subtle visual cues suggest the 'system' of language, like a light diagram over the book or abstract symbols floating around the text. The overall mood is thoughtful and slightly anticipatory, capturing the moment of a test or deep study. Perspective is distant or over-the-shoulder, avoiding specific gender identification of the main character.",
+    "story_M": {
+      "de": "Max lernt Deutsch. Sein Kopf ist voll mit neuen Wörtern. Manchmal ist es schwer, aber er mag die Sprache. Er studiert fleißig, denn er will gute Ergebnisse erwarten. Heute ist ein Test. Max versucht, das System der deutschen Grammatik zu verstehen. Es ist wichtig, seine Rolle als guter Schüler zu spielen. Max muss seine Antworten sorgfältig vergleichen. Nach dem Test ist Max gespannt. Was wird passieren? Er macht einen schnellen Vergleich mit seinen Freunden, obwohl er weiß, dass jeder anders ist.",
+      "en": "Max is learning German. His head is full of new words. Sometimes it's difficult, but he likes the language. He studies diligently because he wants to expect good results. Today is a test. Max tries to understand the system of German grammar. It is important to play his role as a good student. Max has to carefully compare his answers. After the test, Max is excited. What will happen? He makes a quick comparison with his friends, although he knows that everyone is different."
+    },
+    "story_F": {
+      "de": "Lara lernt Deutsch. Ihr Kopf ist voll mit neuen Wörtern. Manchmal ist es schwer, aber sie mag die Sprache. Sie studiert fleißig, denn sie will gute Ergebnisse erwarten. Heute ist ein Test. Lara versucht, das System der deutschen Grammatik zu verstehen. Es ist wichtig, ihre Rolle als gute Schülerin zu spielen. Lara muss ihre Antworten sorgfältig vergleichen. Nach dem Test ist Lara gespannt. Was wird passieren? Sie macht einen schnellen Vergleich mit ihren Freunden, obwohl sie weiß, dass jede anders ist.",
+      "en": "Lara is learning German. Her head is full of new words. Sometimes it's difficult, but she likes the language. She studies diligently because she wants to expect good results. Today is a test. Lara tries to understand the system of German grammar. It is important to play her role as a good student. Lara has to carefully compare her answers. After the test, Lara is excited. What will happen? She makes a quick comparison with her friends, although she knows that everyone is different."
+    }
+  },
+  {
+    "batch_id": 40,
+    "target_words": [
+      "die Straße",
+      "die Angst",
+      "allgemein",
+      "fühlen",
+      "jene (r",
+      "erinnern",
+      "oh",
+      "bedeuten",
+      "die Stimme",
+      "die Reaktion"
+    ],
+    "image_prompt": "A lone silhouette walks down a quiet, empty street at dusk. The street is dimly lit by early streetlights. The perspective is from behind the figure, looking forward down the long, empty road. The atmosphere suggests slight apprehension, which subtly shifts as if a sound has broken the silence, hinting at a moment of recognition or relief. No gender or facial features are visible.",
+    "story_M": {
+      "de": "{{HERO}} geht allein auf die Straße. Er fühlt sich ein bisschen komisch. Ist das Angst? Nein, nicht allgemein. Er erinnert sich an einen Tag. Jener Tag war nicht gut. Plötzlich hört er eine Stimme. \"Hallo, {{HERO}}!\" Oh, er kennt diese Stimme! Die Stimme bedeutet: \"Es ist ein Freund!\" Seine Reaktion ist Freude. Er ist nicht allein.",
+      "en": "{{HERO}} walks alone on the street. He feels a little strange. Is that fear? No, not generally. He remembers a day. That day was not good. Suddenly he hears a voice. \"Hello, {{HERO}}!\" Oh, he knows this voice! The voice means: \"It's a friend!\" His reaction is joy. He is not alone."
+    },
+    "story_F": {
+      "de": "{{HERO}} geht allein auf die Straße. Sie fühlt sich ein bisschen komisch. Ist das Angst? Nein, nicht allgemein. Sie erinnert sich an einen Tag. Jener Tag war nicht gut. Plötzlich hört sie eine Stimme. \"Hallo, {{HERO}}!\" Oh, sie kennt diese Stimme! Die Stimme bedeutet: \"Es ist eine Freundin!\" Ihre Reaktion ist Freude. Sie ist nicht allein.",
+      "en": "{{HERO}} walks alone on the street. She feels a little strange. Is that fear? No, not generally. She remembers a day. That day was not good. Suddenly she hears a voice. \"Hello, {{HERO}}!\" Oh, she knows this voice! The voice means: \"It's a friend!\" Her reaction is joy. She is not alone."
+    }
+  },
+  {
+    "batch_id": 41,
+    "target_words": [
+      "wirken",
+      "darstellen",
+      "der Raum",
+      "Eltern",
+      "bezeichnen",
+      "die Funktion",
+      "häufig",
+      "erscheinen",
+      "USA (Vereinigte Staaten von Amerika)",
+      "der Flüchtling"
+    ],
+    "image_prompt": "A minimalist, slightly empty room with simple furniture. Sunlight streams through a window. In the foreground, a silhouette of a person sits at a small table, looking at a device (like a phone or tablet). A large, simple drawing of a tree is on the wall. The atmosphere is quiet and reflective, conveying a sense of new beginnings and contemplation about safety and the world.",
+    "story_M": {
+      "de": "HERO ist neu in Deutschland. Er ist ein junger Mann. Sein Raum ist klein. Er wirkt ein bisschen leer. Seine Eltern helfen ihm, es einzurichten. HERO bezeichnet den Raum als sein neues Zuhause. Ein Bild an der Wand stellt einen großen Baum dar. HERO liest häufig Nachrichten über die Welt. Oft erscheint ein Bericht über Flüchtlinge. Viele Flüchtlinge kommen aus anderen Ländern. Sie suchen ein sicheres Land, nicht die USA (Vereinigte Staaten von Amerika), sondern oft Deutschland. HERO versteht, dass sein neuer Raum für ihn eine wichtige Funktion hat: Er ist sein sicherer Ort.",
+      "en": "HERO is new in Germany. He is a young man. His room is small. It seems a bit empty. His parents help him to furnish it. HERO calls the room his new home. A picture on the wall depicts a large tree. HERO often reads news about the world. Often a report about refugees appears. Many refugees come from other countries. They are looking for a safe country, not the USA (United States of America), but often Germany. HERO understands that his new room has an important function for him: It is his safe place."
+    },
+    "story_F": {
+      "de": "HERO ist neu in Deutschland. Sie ist eine junge Frau. Ihr Raum ist klein. Er wirkt ein bisschen leer. Ihre Eltern helfen ihr, es einzurichten. HERO bezeichnet den Raum als ihr neues Zuhause. Ein Bild an der Wand stellt einen großen Baum dar. HERO liest häufig Nachrichten über die Welt. Oft erscheint ein Bericht über Flüchtlinge. Viele Flüchtlinge kommen aus anderen Ländern. Sie suchen ein sicheres Land, nicht die USA (Vereinigte Staaten von Amerika), sondern oft Deutschland. HERO versteht, dass ihr neuer Raum für sie eine wichtige Funktion hat: Er ist ihr sicherer Ort.",
+      "en": "HERO is new in Germany. She is a young woman. Her room is small. It seems a bit empty. Her parents help her to furnish it. HERO calls the room her new home. A picture on the wall depicts a large tree. HERO often reads news about the world. Often a report about refugees appears. Many refugees come from other countries. They are looking for a safe country, not the USA (United States of America), but often Germany. HERO understands that her new room has an important function for her: It is her safe place."
+    }
+  },
+  {
+    "batch_id": 42,
+    "target_words": [
+      "früher",
+      "pro",
+      "ergeben",
+      "entscheiden",
+      "die Universität",
+      "betreffen",
+      "oben",
+      "die Richtung",
+      "bestimmen",
+      "fehlen"
+    ],
+    "image_prompt": "A thoughtful person stands at a desk, looking down at an open notebook or a tablet displaying a list of university names. The scene is brightly lit, perhaps by natural light from a large window. The individual's back is to the viewer, or they are silhouetted against the light, conveying contemplation about their future path. The room is tidy and hints at academic aspirations, with a sense of quiet determination.",
+    "story_M": {
+      "de": "Leo ist ein junger Mann. Früher wusste er nicht, was er machen wollte. Jetzt muss er sich entscheiden. Es betrifft seine Zukunft sehr. Er möchte die Universität besuchen. Aber welche? Er hat eine Liste. Oben auf der Liste stehen zwei gute Universitäten. Er muss die Richtung für sein Leben bestimmen. Was will er studieren? Ihm fehlen noch Informationen. Er liest alles genau pro Universität. Am Ende wird sich ein Weg ergeben. Leo ist bereit für seine Entscheidung.",
+      "en": "Leo is a young man. Earlier, he didn't know what he wanted to do. Now he has to decide. It concerns his future very much. He wants to attend university. But which one? He has a list. At the top of the list are two good universities. He has to determine the direction for his life. What does he want to study? He is still missing information. He reads everything carefully for each university. In the end, a path will emerge. Leo is ready for his decision."
+    },
+    "story_F": {
+      "de": "Lena ist eine junge Frau. Früher wusste sie nicht, was sie machen wollte. Jetzt muss sie sich entscheiden. Es betrifft ihre Zukunft sehr. Sie möchte die Universität besuchen. Aber welche? Sie hat eine Liste. Oben auf der Liste stehen zwei gute Universitäten. Sie muss die Richtung für ihr Leben bestimmen. Was will sie studieren? Ihr fehlen noch Informationen. Sie liest alles genau pro Universität. Am Ende wird sich ein Weg ergeben. Lena ist bereit für ihre Entscheidung.",
+      "en": "Lena is a young woman. Earlier, she didn't know what she wanted to do. Now she has to decide. It concerns her future very much. She wants to attend university. But which one? She has a list. At the top of the list are two good universities. She has to determine the direction for her life. What does she want to study? She is still missing information. She reads everything carefully for each university. In the end, a path will emerge. Lena is ready for her decision."
+    }
+  },
+  {
+    "batch_id": 43,
+    "target_words": [
+      "die Sprache",
+      "das Produkt",
+      "die Situation",
+      "außerdem",
+      "nämlich",
+      "international",
+      "der Anfang",
+      "sechs",
+      "nutzen",
+      "sozial"
+    ],
+    "image_prompt": "A modern, bright office space with several desks. A silhouette of a person is sitting at one of the desks, looking at a computer screen. Other blurred figures of colleagues are in the background, suggesting collaborative work. The overall atmosphere is busy and focused. Corporate environment, new beginnings.",
+    "story_M": {
+      "de": "Für {{HERO}} war der Anfang nicht einfach. Er hatte einen neuen Job. Sein Unternehmen entwickelt ein internationales Produkt. Die Sprache, die er oft nutzen muss, ist Englisch. Die Situation ist neu, aber auch sehr spannend für ihn. Außerdem muss er viel mit sechs Kollegen zusammenarbeiten. Nämlich ist es wichtig, dass er sozial ist und gut kommuniziert.",
+      "en": "For {{HERO}}, the beginning was not easy. He had a new job. His company develops an international product. The language he often has to use is English. The situation is new, but also very exciting for him. Furthermore, he has to work a lot with six colleagues. It is important that he is social and communicates well."
+    },
+    "story_F": {
+      "de": "Für {{HERO}} war der Anfang nicht einfach. Sie hatte einen neuen Job. Ihr Unternehmen entwickelt ein internationales Produkt. Die Sprache, die sie oft nutzen muss, ist Englisch. Die Situation ist neu, aber auch sehr spannend für sie. Außerdem muss sie viel mit sechs Kollegen zusammenarbeiten. Nämlich ist es wichtig, dass sie sozial ist und gut kommuniziert.",
+      "en": "For {{HERO}}, the beginning was not easy. She had a new job. Her company develops an international product. The language she often has to use is English. The situation is new, but also very exciting for her. Furthermore, she has to work a lot with six colleagues. It is important that she is social and communicates well."
+    }
+  },
+  {
+    "batch_id": 44,
+    "target_words": [
+      "die Folge",
+      "der Satz",
+      "manche (r",
+      "die Verbindung",
+      "beschreiben",
+      "das Licht",
+      "ähnlich",
+      "die Regel",
+      "gegenüber",
+      "der Kollege"
+    ],
+    "image_prompt": "A bright, quiet classroom scene during a German language course. Sunlight streams through a large window onto a wooden table where a student is seated, looking at a notebook. A second student is visible across the table, reading a book. The main protagonist is shown from a slight distance or as a silhouette, focusing on the overall studious atmosphere and the interplay of natural light.",
+    "story_M": {
+      "de": "{{HERO}} lernt Deutsch. Er ist in seinem Kurs. Er sitzt an einem Tisch. Ihm gegenüber sitzt sein Kollege. Sein Kollege liest. {{HERO}} denkt über einen Satz nach. Er will beschreiben, wie man manche Wörter in die richtige Folge bringt. Das Licht ist hell. Für ihn ist die Regel für die Verbindung von Sätzen oft ähnlich, aber manchmal auch anders. Er lernt viel.",
+      "en": "{{HERO}} learns German. He is in his class. He sits at a table. Opposite him sits his colleague. His colleague is reading. {{HERO}} thinks about a sentence. He wants to describe how to put some words in the correct sequence. The light is bright. For him, the rule for the connection of sentences is often similar, but sometimes also different. He learns a lot."
+    },
+    "story_F": {
+      "de": "{{HERO}} lernt Deutsch. Sie ist in ihrem Kurs. Sie sitzt an einem Tisch. Ihr gegenüber sitzt ihre Kollegin. Ihre Kollegin liest. {{HERO}} denkt über einen Satz nach. Sie will beschreiben, wie man manche Wörter in die richtige Folge bringt. Das Licht ist hell. Für sie ist die Regel für die Verbindung von Sätzen oft ähnlich, aber manchmal auch anders. Sie lernt viel.",
+      "en": "{{HERO}} learns German. She is in her class. She sits at a table. Opposite her sits her colleague. Her colleague is reading. {{HERO}} thinks about a sentence. She wants to describe how to put some words in the correct sequence. The light is bright. For her, the rule for the connection of sentences is often similar, but sometimes also different. She learns a lot."
+    }
+  },
+  {
+    "batch_id": 45,
+    "target_words": [
+      "bisher",
+      "tief",
+      "halb",
+      "lachen",
+      "ebenfalls",
+      "sofort",
+      "die Grenze",
+      "ändern",
+      "die Entscheidung",
+      "verlassen"
+    ],
+    "image_prompt": "A person stands at a mountain path, gazing out at a serene landscape. In the distance, a large, deep blue lake is nestled among green hills, reflecting the sky. The sun is setting, casting a soft, golden light. The person is seen from behind, as a silhouette, or from a distant perspective, making their gender indistinguishable. There's a feeling of new beginnings and adventure.",
+    "story_M": {
+      "de": "Leo ist Student. Bisher war sein Leben ruhig. Eines Tages sah er ein Plakat. Es zeigte einen Berg mit einem tiefen See. Leo dachte: \"Ich möchte reisen!\" Es war schon halb neun. Er musste sofort handeln. Er traf eine wichtige Entscheidung: Er wollte sein Heimatland verlassen.\nSein Freund Alex kam. Alex musste lachen, als Leo ihm die Idee erzählte. \"Reisen? Das ist super!\", sagte Alex. Er wollte ebenfalls mitkommen. Sie planten, die Grenze zu überqueren. Leo wusste, sein Leben würde sich ändern. Er war glücklich.",
+      "en": "Leo is a student. So far, his life was quiet. One day he saw a poster. It showed a mountain with a deep lake. Leo thought: \"I want to travel!\" It was already half past eight. He had to act immediately. He made an important decision: He wanted to leave his home country.\nHis friend Alex came. Alex had to laugh when Leo told him the idea. \"Travel? That's great!\" said Alex. He likewise wanted to come along. They planned to cross the border. Leo knew his life would change. He was happy."
+    },
+    "story_F": {
+      "de": "Lea ist Studentin. Bisher war ihr Leben ruhig. Eines Tages sah sie ein Plakat. Es zeigte einen Berg mit einem tiefen See. Lea dachte: \"Ich möchte reisen!\" Es war schon halb neun. Sie musste sofort handeln. Sie traf eine wichtige Entscheidung: Sie wollte ihr Heimatland verlassen.\nIhre Freundin Anna kam. Anna musste lachen, als Lea ihr die Idee erzählte. \"Reisen? Das ist super!\", sagte Anna. Sie wollte ebenfalls mitkommen. Sie planten, die Grenze zu überqueren. Lea wusste, ihr Leben würde sich ändern. Sie war glücklich.",
+      "en": "Lea is a student. So far, her life was quiet. One day she saw a poster. It showed a mountain with a deep lake. Lea thought: \"I want to travel!\" It was already half past eight. She had to act immediately. She made an important decision: She wanted to leave her home country.\nHer friend Anna came. Anna had to laugh when Lea told her the idea. \"Travel? That's great!\" said Anna. She likewise wanted to come along. They planned to cross the border. Lea knew her life would change. She was happy."
+    }
+  },
+  {
+    "batch_id": 46,
+    "target_words": [
+      "die Idee",
+      "verbinden",
+      "Milliarde",
+      "endlich",
+      "die Energie",
+      "plötzlich",
+      "danach",
+      "die Kraft",
+      "lieber",
+      "gehören"
+    ],
+    "image_prompt": "A close-up, first-person perspective of hands working meticulously on a small electronic project on a simple wooden desk. Wires and a small, unlit device are visible. Suddenly, a single, bare light bulb connected to the project flickers to life, emitting a warm, bright glow that illuminates the immediate surroundings. The focus is on the light and the hands, with the person's face not visible, emphasizing the moment of successful creation. The background is softly blurred.",
+    "story_M": {
+      "de": "Max ist ein junger Mann. Er hat eine tolle `Idee`. Er möchte zwei Dinge `verbinden`. Es ist nicht für eine `Milliarde` Euro, aber es ist wichtig für ihn. Er braucht `Energie`. Er arbeitet lange. `Endlich`! Das Licht geht an. `Plötzlich` fühlt er eine große `Kraft`. `Danach` ist er müde. Er trinkt `lieber` einen Tee. Dieses kleine Licht `gehört` jetzt ihm. Es ist sein Erfolg.",
+      "en": "Max is a young man. He has a great `idea`. He wants to `connect` two things. It's not worth a `billion` euros, but it's important to him. He needs `energy`. He works for a long time. `Finally`! The light turns on. `Suddenly`, he feels a great `strength`. `Afterwards`, he is tired. He `prefers` to drink a tea. This small light now `belongs` to him. It is his success."
+    },
+    "story_F": {
+      "de": "Lena ist eine junge Frau. Sie hat eine tolle `Idee`. Sie möchte zwei Dinge `verbinden`. Es ist nicht für eine `Milliarde` Euro, aber es ist wichtig für sie. Sie braucht `Energie`. Sie arbeitet lange. `Endlich`! Das Licht geht an. `Plötzlich` fühlt sie eine große `Kraft`. `Danach` ist sie müde. Sie trinkt `lieber` einen Tee. Dieses kleine Licht `gehört` jetzt ihr. Es ist ihr Erfolg.",
+      "en": "Lena is a young woman. She has a great `idea`. She wants to `connect` two things. It's not worth a `billion` euros, but it's important to her. She needs `energy`. She works for a long time. `Finally`! The light turns on. `Suddenly`, she feels a great `strength`. `Afterwards`, she is tired. She `prefers` to drink a tea. This small light now `belongs` to her. It is her success."
+    }
+  },
+  {
+    "batch_id": 47,
+    "target_words": [
+      "einsetzen",
+      "das Gefühl",
+      "trotzdem",
+      "befinden (sich)",
+      "die Information",
+      "dadurch",
+      "dagegen",
+      "die Weise",
+      "die Zukunft",
+      "wachsen"
+    ],
+    "image_prompt": "A close-up, first-person perspective of hands gently placing seeds into a small pot filled with soil on a sunny balcony. Various small potted plants and a watering can are visible in the soft background. The scene evokes a sense of care and new beginnings.",
+    "story_M": {
+      "de": "Max möchte einen kleinen Garten haben. Er hat das Gefühl von Hoffnung. Er kauft Samen und Erde. Er möchte die Samen in die Erde einsetzen. Trotzdem ist sein Balkon klein. Die Samen befinden sich in einem kleinen Topf. Er liest die Information auf der Packung sehr genau. Dadurch weiß er, wie viel Wasser die Samen brauchen. Er gießt die Pflanzen jeden Tag. Viele sagen, es ist schwer. Dagegen ist er sehr fleißig und gibt nicht auf. Auf diese Weise kümmert er sich gut. Er denkt oft an die Zukunft. Er weiß, dass die Pflanzen bald wachsen werden.",
+      "en": "Max wants to have a small garden. He has the feeling of hope. He buys seeds and soil. He wants to insert the seeds into the soil. Nevertheless, his balcony is small. The seeds are located in a small pot. He reads the information on the packet very carefully. Thereby, he knows how much water the seeds need. He waters the plants every day. Many say it is difficult. On the other hand, he is very diligent and does not give up. In this way, he takes good care of them. He often thinks about the future. He knows that the plants will grow soon."
+    },
+    "story_F": {
+      "de": "Julia möchte einen kleinen Garten haben. Sie hat das Gefühl von Hoffnung. Sie kauft Samen und Erde. Sie möchte die Samen in die Erde einsetzen. Trotzdem ist ihr Balkon klein. Die Samen befinden sich in einem kleinen Topf. Sie liest die Information auf der Packung sehr genau. Dadurch weiß sie, wie viel Wasser die Samen brauchen. Sie gießt die Pflanzen jeden Tag. Viele sagen, es ist schwer. Dagegen ist sie sehr fleißig und gibt nicht auf. Auf diese Weise kümmert sie sich gut. Sie denkt oft an die Zukunft. Sie weiß, dass die Pflanzen bald wachsen werden.",
+      "en": "Julia wants to have a small garden. She has the feeling of hope. She buys seeds and soil. She wants to insert the seeds into the soil. Nevertheless, her balcony is small. The seeds are located in a small pot. She reads the information on the packet very carefully. Thereby, she knows how much water the seeds need. She waters the plants every day. Many say it is difficult. On the other hand, she is very diligent and does not give up. In this way, she takes good care of them. She often thinks about the future. She knows that the plants will grow soon."
+    }
+  },
+  {
+    "batch_id": 48,
+    "target_words": [
+      "bitte",
+      "weiß",
+      "der Text",
+      "schwarz",
+      "sterben",
+      "der Markt",
+      "rot",
+      "halt",
+      "Meter",
+      "nahe"
+    ],
+    "image_prompt": "A bustling open-air market seen from a slightly elevated, distant perspective. Stalls overflow with a vibrant array of fruits and vegetables in red, black, and other colors. A person, depicted as a silhouette or from behind, is visible browsing near a stall. On a nearby table, a small, pale (almost white) plant sits in a pot. A simple sign with readable text is attached to a wooden post or stall. The atmosphere is lively and colorful, with a feeling of everyday activity.",
+    "story_M": {
+      "de": "{{HERO}} geht zum Markt. Der Markt ist nahe seinem Haus, nur hundert Meter. Er sieht viele Farben. Er sieht einen Stift. Der Stift ist schwarz. Ein Apfel ist rot. Er fragt: \"Bitte, kann ich den Apfel haben?\" Der Verkäufer sagt: \"Ja.\" Er sieht auch eine kleine Pflanze. Sie ist schon etwas weiß und sieht nicht gut aus. Er denkt: \"Oh, diese Pflanze wird sterben, wenn sie kein Wasser bekommt.\" Er liest einen kleinen Text auf einem Schild. Es sagt: \"Halt! Frisches Gemüse hier.\"",
+      "en": "{{HERO}} goes to the market. The market is near his house, only a hundred meters away. He sees many colors. He sees a pen. The pen is black. An apple is red. He asks: \"Please, can I have the apple?\" The seller says: \"Yes.\" He also sees a small plant. It is already a little white and doesn't look good. He thinks: \"Oh, this plant will die if it doesn't get water.\" He reads a small text on a sign. It says: \"Stop! Fresh vegetables here.\""
+    },
+    "story_F": {
+      "de": "{{HERO}} geht zum Markt. Der Markt ist nahe ihrem Haus, nur hundert Meter. Sie sieht viele Farben. Sie sieht einen Stift. Der Stift ist schwarz. Ein Apfel ist rot. Sie fragt: \"Bitte, kann ich den Apfel haben?\" Der Verkäufer sagt: \"Ja.\" Sie sieht auch eine kleine Pflanze. Sie ist schon etwas weiß und sieht nicht gut aus. Sie denkt: \"Oh, diese Pflanze wird sterben, wenn sie kein Wasser bekommt.\" Sie liest einen kleinen Text auf einem Schild. Es sagt: \"Halt! Frisches Gemüse hier.\"",
+      "en": "{{HERO}} goes to the market. The market is near her house, only a hundred meters away. She sees many colors. She sees a pen. The pen is black. An apple is red. She asks: \"Please, can I have the apple?\" The seller says: \"Yes.\" She also sees a small plant. It is already a little white and doesn't look good. She thinks: \"Oh, this plant will die if it doesn't get water.\" She reads a small text on a sign. It says: \"Stop! Fresh vegetables here.\""
+    }
+  },
+  {
+    "batch_id": 49,
+    "target_words": [
+      "die Hilfe",
+      "das Kapitel",
+      "ausgehen",
+      "die Bedeutung",
+      "betrachten",
+      "die Chemie",
+      "die Luft",
+      "der Körper",
+      "die Struktur",
+      "stimmen"
+    ],
+    "image_prompt": "A solitary figure, seen from a slight distance, walks through a peaceful park under soft natural light. The person pauses to observe a tree or a flower, holding a book in one hand. The scene evokes a moment of quiet contemplation and learning in nature. Focus on the tranquil atmosphere and the details of the plant's structure. The protagonist's gender is not clearly discernible, perhaps a silhouette or blurred.",
+    "story_M": {
+      "de": "{{HERO}} lernt Deutsch. Er liest ein neues Kapitel. Das Kapitel ist schwer. Er versteht nicht alle Wörter. Was ist die Bedeutung von \"betrachten\"? Er betrachtet den Text sehr genau. Er braucht Hilfe. Er beschließt, auszugehen. Frische Luft tut seinem Körper gut. Er geht im Park spazieren. Er sieht einen Baum mit einer interessanten Struktur. Er denkt über die Wörter nach. Ist seine Antwort \"betrachten = anschauen\" richtig? Ja, das stimmt. Er fühlt sich besser. Jetzt versteht er es. Er denkt an die Chemie der Pflanzen im Park. Die Natur hilft ihm.",
+      "en": "{{HERO}} is learning German. He reads a new chapter. The chapter is difficult. He doesn't understand all the words. What is the meaning of \"betrachten\"? He looks at the text very carefully. He needs help. He decides to go out. Fresh air is good for his body. He walks in the park. He sees a tree with an interesting structure. He thinks about the words. Is his answer \"betrachten = anschauen\" correct? Yes, that's right. He feels better. Now he understands it. He thinks about the chemistry of the plants in the park. Nature helps him."
+    },
+    "story_F": {
+      "de": "{{HERO}} lernt Deutsch. Sie liest ein neues Kapitel. Das Kapitel ist schwer. Sie versteht nicht alle Wörter. Was ist die Bedeutung von \"betrachten\"? Sie betrachtet den Text sehr genau. Sie braucht Hilfe. Sie beschließt, auszugehen. Frische Luft tut ihrem Körper gut. Sie geht im Park spazieren. Sie sieht eine Blume mit einer interessanten Struktur. Sie denkt über die Wörter nach. Ist ihre Antwort \"betrachten = anschauen\" richtig? Ja, das stimmt. Sie fühlt sich besser. Jetzt versteht sie es. Sie denkt an die Chemie der Pflanzen im Park. Die Natur hilft ihr.",
+      "en": "{{HERO}} is learning German. She reads a new chapter. The chapter is difficult. She doesn't understand all the words. What is the meaning of \"betrachten\"? She looks at the text very carefully. She needs help. She decides to go out. Fresh air is good for her body. She walks in the park. She sees a flower with an interesting structure. She thinks about the words. Is her answer \"betrachten = anschauen\" correct? Yes, that's right. She feels better. Now she understands it. She thinks about the chemistry of the plants in the park. Nature helps her."
+    }
+  },
+  {
+    "batch_id": 50,
+    "target_words": [
+      "bitten",
+      "das Jahrhundert",
+      "wahrscheinlich",
+      "öffentlich",
+      "euch",
+      "insgesamt",
+      "anfangen",
+      "genug",
+      "das Deutsche",
+      "verändern"
+    ],
+    "image_prompt": "A silhouette of a person standing thoughtfully in a bright, modern city park, looking towards a path. In the mid-ground, a small, diverse group of friends is gathered, gesturing in conversation. Distant, well-lit public buildings are visible in the background, implying community and opportunity. The overall mood is hopeful and optimistic, representing a new beginning.",
+    "story_M": {
+      "de": "{{HERO}} möchte Deutsch lernen. Es ist ein neues Jahrhundert und er will etwas Neues anfangen. Er fragt seine Freunde: \"Ich möchte euch bitten, helft mir! Wo kann ich das Deutsche lernen?\" Seine Freunde sagen: \"Es gibt einen Kurs, der ist öffentlich.\" {{HERO}} denkt: \"Das ist wahrscheinlich gut.\" Er hat genug Motivation. Er weiß, dass sein Leben sich bald verändern wird. Insgesamt ist er sehr glücklich.",
+      "en": "{{HERO}} wants to learn German. It is a new century and he wants to start something new. He asks his friends: \"I want to ask you, help me! Where can I learn German?\" His friends say: \"There is a course, it is public.\" {{HERO}} thinks: \"That is probably good.\" He has enough motivation. He knows that his life will soon change. Overall, he is very happy."
+    },
+    "story_F": {
+      "de": "{{HERO}} möchte Deutsch lernen. Es ist ein neues Jahrhundert und sie will etwas Neues anfangen. Sie fragt ihre Freundinnen: \"Ich möchte euch bitten, helft mir! Wo kann ich das Deutsche lernen?\" Ihre Freundinnen sagen: \"Es gibt einen Kurs, der ist öffentlich.\" {{HERO}} denkt: \"Das ist wahrscheinlich gut.\" Sie hat genug Motivation. Sie weiß, dass ihr Leben sich bald verändern wird. Insgesamt ist sie sehr glücklich.",
+      "en": "{{HERO}} wants to learn German. It is a new century and she wants to start something new. She asks her friends: \"I want to ask you, help me! Where can I learn German?\" Her friends say: \"There is a course, it is public.\" {{HERO}} thinks: \"That is probably good.\" She has enough motivation. She knows that her life will soon change. Overall, she is very happy."
+    }
+  },
+  {
+    "batch_id": 51,
+    "target_words": [
+      "die Wohnung",
+      "gelingen",
+      "bald",
+      "gering",
+      "der Film",
+      "kaufen",
+      "ansehen",
+      "öffnen",
+      "die Musik",
+      "schauen"
+    ],
+    "image_prompt": "A cozy living room at dusk, viewed from a first-person perspective. A large television screen shows a film playing. A hand (gender-neutral, out of focus, or only partially visible) holds a beverage or remote control. Soft, ambient lighting creates a comfortable, relaxed atmosphere for watching a movie.",
+    "story_M": {
+      "de": "Max ist in seiner gemütlichen Wohnung. Er hat einen neuen Film gekauft. Bald möchte er den Film ansehen. Max macht leise die Musik an; die Lautstärke ist gering. Er öffnet eine Flasche Limo. Dann schaut er auf den großen Bildschirm. Der Film gefällt ihm sehr und der Abend gelingt ihm gut.",
+      "en": "Max is in his cozy apartment. He bought a new film. Soon he wants to watch the film. Max quietly turns on the music; the volume is low. He opens a bottle of lemonade. Then he looks at the big screen. He likes the film very much, and the evening turns out well for him."
+    },
+    "story_F": {
+      "de": "Lena ist in ihrer gemütlichen Wohnung. Sie hat einen neuen Film gekauft. Bald möchte sie den Film ansehen. Lena macht leise die Musik an; die Lautstärke ist gering. Sie öffnet eine Flasche Limo. Dann schaut sie auf den großen Bildschirm. Der Film gefällt ihr sehr und der Abend gelingt ihr gut.",
+      "en": "Lena is in her cozy apartment. She bought a new film. Soon she wants to watch the film. Lena quietly turns on the music; the volume is low. She opens a bottle of lemonade. Then she looks at the big screen. She likes the film very much, and the evening turns out well for her."
+    }
+  },
+  {
+    "batch_id": 52,
+    "target_words": [
+      "das Stück",
+      "besondere (r",
+      "tot",
+      "der Gott",
+      "völlig",
+      "positiv",
+      "das Gespräch",
+      "darum",
+      "der Kunde",
+      "die Menge"
+    ],
+    "image_prompt": "A warm, inviting art shop interior. A unique, intricate wooden sculpture is prominently displayed on a stand. A customer stands in front of it, gesturing slightly as they engage in conversation with a shop owner. The shop owner is depicted from behind or as a blurred silhouette, their face obscured. The customer's back is also slightly turned, or they are viewed from a distance. Soft light illuminates the sculpture. The overall atmosphere is one of quiet appreciation and engaged dialogue, with a sense of 'a special piece' being central.",
+    "story_M": {
+      "de": "{{HERO}} hat einen kleinen Laden. Er hat ein **besonderes Stück** dort: Eine Skulptur aus altem Holz. Das Holz war **völlig tot**, aber {{HERO}} gab ihm neues Leben. Ein **Kunde** tritt ein. Der Kunde sieht **das Stück**. Es ist sehr ungewöhnlich. Der Kunde beginnt **das Gespräch** mit {{HERO}}. Sie sprechen **darum** viel über die Skulptur. Der Kunde ist **völlig** begeistert und sagt: \"Das ist ein Meisterwerk! Wie ein Geschenk von **Gott**!\" {{HERO}} ist sehr **positiv** über die Worte. Auch wenn **die Menge** der Besucher heute nicht groß ist, ist es ein guter Tag für ihn.",
+      "en": "{{HERO}} has a small shop. He has a **special piece** there: a sculpture made from old wood. The wood was **completely dead**, but {{HERO}} gave it new life. A **customer** enters. The customer sees **the piece**. It is very unusual. The customer starts **the conversation** with {{HERO}}. They talk a lot **about it**, about the sculpture. The customer is **totally** enthusiastic and says: \"This is a masterpiece! Like a gift from **God**!\" {{HERO}} is very **positive** about the words. Even if **the crowd** of visitors today is not large, it is a good day for him."
+    },
+    "story_F": {
+      "de": "{{HERO}} hat einen kleinen Laden. Sie hat ein **besonderes Stück** dort: Eine Skulptur aus altem Holz. Das Holz war **völlig tot**, aber {{HERO}} gab ihm neues Leben. Eine **Kundin** tritt ein. Die Kundin sieht **das Stück**. Es ist sehr ungewöhnlich. Die Kundin beginnt **das Gespräch** mit {{HERO}}. Sie sprechen **darum** viel über die Skulptur. Die Kundin ist **völlig** begeistert und sagt: \"Das ist ein Meisterwerk! Wie ein Geschenk von **Gott**!\" {{HERO}} ist sehr **positiv** über die Worte. Auch wenn **die Menge** der Besucher heute nicht groß ist, ist es ein guter Tag für sie.",
+      "en": "{{HERO}} has a small shop. She has a **special piece** there: a sculpture made from old wood. The wood was **completely dead**, but {{HERO}} gave it new life. A **customer** enters. The customer sees **the piece**. It is very unusual. The customer starts **the conversation** with {{HERO}}. They talk a lot **about it**, about the sculpture. The customer is **totally** enthusiastic and says: \"This is a masterpiece! Like a gift from **God**!\" {{HERO}} is very **positive** about the words. Even if **the crowd** of visitors today is not large, it is a good day for her."
+    }
+  },
+  {
+    "batch_id": 53,
+    "target_words": [
+      "die Regierung",
+      "die Antwort",
+      "annehmen",
+      "falsch",
+      "der Zusammenhang",
+      "langsam",
+      "der Arm",
+      "nachdem",
+      "der Tisch",
+      "rufen"
+    ],
+    "image_prompt": "A person, seen from behind or as a silhouette, sits alone at a simple wooden table, slowly reading a formal document or letter. One arm is resting on the table. A sense of disappointment and confusion is conveyed by their posture. A vintage telephone sits nearby on the table. The scene is lit softly, suggesting an indoor setting near a window.",
+    "story_M": {
+      "de": "Leo wartet. Er wartet auf die Antwort von der Regierung. Endlich kommt ein Brief. Leo liest ihn langsam. Er legt seinen Arm auf den Tisch. Die Antwort ist da. Leo denkt: 'Das ist falsch!' Er kann diese Antwort nicht annehmen. Der Zusammenhang ist für ihn nicht klar. Er versteht es nicht gut. Nachdem er den Brief noch einmal gelesen hat, will er jemanden rufen. Er nimmt sein Telefon und ruft seinen Nachbarn an.",
+      "en": "Leo waits. He waits for the answer from the government. Finally, a letter arrives. Leo reads it slowly. He places his arm on the table. The answer is there. Leo thinks: 'That is wrong!' He cannot accept this answer. The context is not clear to him. He doesn't understand it well. After he has read the letter once more, he wants to call someone. He takes his phone and calls his neighbor."
+    },
+    "story_F": {
+      "de": "Lea wartet. Sie wartet auf die Antwort von der Regierung. Endlich kommt ein Brief. Lea liest ihn langsam. Sie legt ihren Arm auf den Tisch. Die Antwort ist da. Lea denkt: 'Das ist falsch!' Sie kann diese Antwort nicht annehmen. Der Zusammenhang ist für sie nicht klar. Sie versteht es nicht gut. Nachdem sie den Brief noch einmal gelesen hat, will sie jemanden rufen. Sie nimmt ihr Telefon und ruft ihre Nachbarin an.",
+      "en": "Lea waits. She waits for the answer from the government. Finally, a letter arrives. Lea reads it slowly. She places her arm on the table. The answer is there. Lea thinks: 'That is wrong!' She cannot accept this answer. The context is not clear to her. She doesn't understand it well. After she has read the letter once more, she wants to call someone. She takes her phone and calls her neighbor."
+    }
+  },
+  {
+    "batch_id": 54,
+    "target_words": [
+      "bieten",
+      "das Herz",
+      "zusammen",
+      "inzwischen",
+      "ebenso",
+      "der Boden",
+      "bevor",
+      "verwenden",
+      "die Politik",
+      "der Tod"
+    ],
+    "image_prompt": "A peaceful garden scene at golden hour. Lush green plants and colorful flowers are visible. Gardening tools lie on the soft, dark earth. A person is sitting on the ground, back to the viewer or only their silhouette visible, gently touching the soil. Sunlight filters through leaves. The overall atmosphere is calm and reflective.",
+    "story_M": {
+      "de": "Max ist im Garten. Er liebt das Herz der Natur. Er möchte neue Blumen pflanzen. Zuerst muss er eine kleine Kiste zusammenbauen. Er kann gute Werkzeuge verwenden. Er sitzt auf dem weichen Boden. Bevor er die Blumen pflanzt, denkt er nach. Die Natur bietet ihm viel Freude und Ruhe. Inzwischen singen die Vögel ein schönes Lied. Er fühlt sich ebenso glücklich wie ein Kind. Er denkt: Die Politik ist oft laut, aber hier im Garten ist es still. Der Tod ist ein Teil des Lebens, aber das Leben hier ist so schön.",
+      "en": "Max is in the garden. He loves the heart of nature. He wants to plant new flowers. First, he has to assemble a small box. He can use good tools. He sits on the soft ground. Before he plants the flowers, he thinks. Nature offers him much joy and peace. Meanwhile, the birds sing a beautiful song. He feels just as happy as a child. He thinks: Politics is often loud, but here in the garden, it is quiet. Death is a part of life, but life here is so beautiful."
+    },
+    "story_F": {
+      "de": "Lena ist im Garten. Sie liebt das Herz der Natur. Sie möchte neue Blumen pflanzen. Zuerst muss sie eine kleine Kiste zusammenbauen. Sie kann gute Werkzeuge verwenden. Sie sitzt auf dem weichen Boden. Bevor sie die Blumen pflanzt, denkt sie nach. Die Natur bietet ihr viel Freude und Ruhe. Inzwischen singen die Vögel ein schönes Lied. Sie fühlt sich ebenso glücklich wie ein Kind. Sie denkt: Die Politik ist oft laut, aber hier im Garten ist es still. Der Tod ist ein Teil des Lebens, aber das Leben hier ist so schön.",
+      "en": "Lena is in the garden. She loves the heart of nature. She wants to plant new flowers. First, she has to assemble a small box. She can use good tools. She sits on the soft ground. Before she plants the flowers, she thinks. Nature offers her much joy and peace. Meanwhile, the birds sing a beautiful song. She feels just as happy as a child. She thinks: Politics is often loud, but here in the garden, it is quiet. Death is a part of life, but life here is so beautiful."
+    }
+  },
+  {
+    "batch_id": 55,
+    "target_words": [
+      "der Erfolg",
+      "zudem",
+      "die Bank",
+      "ab",
+      "persönlich",
+      "der Präsident",
+      "holen",
+      "der Junge",
+      "sogenannt",
+      "die Polizei"
+    ],
+    "image_prompt": "A modern, sunlit bank lobby. A person's silhouette stands in the middle, looking towards a private office. Inside the office, the silhouette of a bank president is visible behind a large desk. A young boy in a uniform walks past, offering a subtle gesture of guidance. Through the large glass facade of the bank, a distant police car with a soft blue light is visible on the bustling city street outside.",
+    "story_M": {
+      "de": "Max ist ein junger Mann. Er möchte **Erfolg** haben. Er geht zur **Bank**, um wichtige Papiere zu **holen**. In der Bank sieht er einen **Jungen**. Der **sogenannt**e „kleine Helfer“ der Bank ist sehr nett. Max spricht **persönlich** mit dem **Präsident**en der Bank. **Zudem** bekommt Max gute Ratschläge. **Ab** diesem Tag arbeitet Max hart. Eines Tages kommt die **Polizei**. Sie sucht nicht Max, sondern ist nur in der Nähe.",
+      "en": "Max is a young man. He wants to have success. He goes to the bank to fetch important papers. In the bank, he sees a boy. The so-called \"little helper\" of the bank is very nice. Max speaks personally with the president of the bank. In addition, Max receives good advice. From this day on, Max works hard. One day, the police come. They are not looking for Max, but are just nearby."
+    },
+    "story_F": {
+      "de": "Anna ist eine junge Frau. Sie möchte **Erfolg** haben. Sie geht zur **Bank**, um wichtige Papiere zu **holen**. In der Bank sieht sie einen **Jungen**. Der **sogenannt**e „kleine Helfer“ der Bank ist sehr nett. Anna spricht **persönlich** mit dem **Präsident**en der Bank. **Zudem** bekommt Anna gute Ratschläge. **Ab** diesem Tag arbeitet Anna hart. Eines Tages kommt die **Polizei**. Sie sucht nicht Anna, sondern ist nur in der Nähe.",
+      "en": "Anna is a young woman. She wants to have success. She goes to the bank to fetch important papers. In the bank, she sees a boy. The so-called \"little helper\" of the bank is very nice. Anna speaks personally with the president of the bank. In addition, Anna receives good advice. From this day on, Anna works hard. One day, the police come. They are not looking for Anna, but are just nearby."
+    }
+  },
+  {
+    "batch_id": 56,
+    "target_words": [
+      "die Chance",
+      "gewiss",
+      "innerhalb",
+      "die Kunst",
+      "die Lage",
+      "der Schüler",
+      "gesamt",
+      "der Druck",
+      "verschwinden",
+      "wohnen"
+    ],
+    "image_prompt": "A split image or sequential frames. On one side, a distant shot or silhouette of a student feeling a bit overwhelmed, perhaps walking alone in a school hallway or looking at many books. On the other side, the same student (silhouette or from behind) happily engaged in an art class, painting or drawing. The overall mood shifts from initial pressure to a sense of calm and discovery. Bright, warm colors for the art scene, slightly muted for the initial pressure scene.",
+    "story_M": {
+      "de": "HERO ist ein neuer Schüler in der Stadt. Er wohnt jetzt hier. Am Anfang ist seine Lage ein bisschen schwierig. Er spürt einen gewissen Druck in der Schule. Vieles ist neu für ihn. Dann sieht er eine Chance: einen Kurs in Kunst! HERO mag die Kunst sehr. Innerhalb von nur drei Wochen beginnt der Druck zu verschwinden. Die gesamte Situation wird besser für ihn.",
+      "en": "HERO is a new student in the city. He lives here now. At the beginning, his situation is a bit difficult. He feels a certain pressure at school. A lot is new for him. Then he sees a chance: an art course! HERO really likes art. Within just three weeks, the pressure begins to disappear. The entire situation gets better for him."
+    },
+    "story_F": {
+      "de": "HERO ist eine neue Schülerin in der Stadt. Sie wohnt jetzt hier. Am Anfang ist ihre Lage ein bisschen schwierig. Sie spürt einen gewissen Druck in der Schule. Vieles ist neu für sie. Dann sieht sie eine Chance: einen Kurs in Kunst! HERO mag die Kunst sehr. Innerhalb von nur drei Wochen beginnt der Druck zu verschwinden. Die gesamte Situation wird besser für sie.",
+      "en": "HERO is a new student in the city. She lives here now. At the beginning, her situation is a bit difficult. She feels a certain pressure at school. A lot is new for her. Then she sees a chance: an art course! HERO really likes art. Within just three weeks, the pressure begins to disappear. The entire situation gets better for her."
+    }
+  },
+  {
+    "batch_id": 57,
+    "target_words": [
+      "bewegen",
+      "enthalten",
+      "aufnehmen",
+      "Kosten",
+      "das Wintersemester",
+      "merken",
+      "fest",
+      "aktuell",
+      "der Begriff",
+      "erleben"
+    ],
+    "image_prompt": "A person, seen from a slight distance or over their shoulder, sitting at a desk in a cozy, well-lit room. They are looking intently at a laptop screen displaying a university's website or an email with application details. A cup of coffee or tea sits next to the laptop. Papers and possibly a pen are scattered on the desk. The atmosphere is studious and hopeful. The individual's face is not clearly visible, or they are presented in a way that is gender-neutral (e.g., from behind, a silhouette, or a focus on hands/desk items).",
+    "story_M": {
+      "de": "Leo ist ein junger Mann. Er möchte in Deutschland studieren. Für **das Wintersemester** muss er sich beeilen. Die Universität hat ihm eine E-Mail geschickt. Die E-Mail **enthält** wichtige Informationen über die Anmeldung. Die **Kosten** für **sein** Studium sind ein Thema, das ihn **bewegen** wird. Er muss sich die genauen Zahlen **merken**. Er plant, viele Kurse **aufzunehmen**. Ein **aktuell** wichtiges Dokument ist die Krankenversicherung. Der **Begriff** 'Semesterbeitrag' ist für ihn neu, aber er lernt schnell. Er freut sich darauf, **sein** Studentenleben zu **erleben**. Er ist **fest** entschlossen.",
+      "en": "Leo is a young man. He wants to study in Germany. He has to hurry for the **winter semester**. The university sent him an email. The email **contains** important information about registration. The **costs** for **his** studies are a topic that will **concern** him. He has to **remember** the exact numbers. He plans to **take** many courses. A **currently** important document is health insurance. The **term** 'semester fee' is new to him, but he learns quickly. He looks forward to **experiencing** **his** student life. He is **firmly** determined."
+    },
+    "story_F": {
+      "de": "Lena ist eine junge Frau. Sie möchte in Deutschland studieren. Für **das Wintersemester** muss sie sich beeilen. Die Universität hat ihr eine E-Mail geschickt. Die E-Mail **enthält** wichtige Informationen über die Anmeldung. Die **Kosten** für **ihr** Studium sind ein Thema, das sie **bewegen** wird. Sie muss sich die genauen Zahlen **merken**. Sie plant, viele Kurse **aufzunehmen**. Ein **aktuell** wichtiges Dokument ist die Krankenversicherung. Der **Begriff** 'Semesterbeitrag' ist für sie neu, aber sie lernt schnell. Sie freut sich darauf, **ihr** Studentenleben zu **erleben**. Sie ist **fest** entschlossen.",
+      "en": "Lena is a young woman. She wants to study in Germany. She has to hurry for the **winter semester**. The university sent her an email. The email **contains** important information about registration. The **costs** for **her** studies are a topic that will **concern** her. She has to **remember** the exact numbers. She plans to **take** many courses. A **currently** important document is health insurance. The **term** 'semester fee' is new to her, but she learns quickly. She looks forward to **experiencing** **her** student life. She is **firmly** determined."
+    }
+  },
+  {
+    "batch_id": 58,
+    "target_words": [
+      "relativ",
+      "laut",
+      "der Fuß",
+      "Daten",
+      "der Krieg",
+      "der Gast",
+      "die Aussage",
+      "das Gesetz",
+      "planen",
+      "schwierig"
+    ],
+    "image_prompt": "An indoor scene in a simple, quiet room. A window shows a glimpse of an urban environment with soft evening light. A desk with a laptop displaying abstract data patterns. A slight, almost imperceptible vibration or sound wave emanates from a nearby wall, hinting at 'laut' noise. A blurred, distant silhouette of a person sits at the desk, with one hand casually resting on their lap, subtly suggesting a minor discomfort. The general atmosphere conveys contemplation and the act of planning, with a faint, overlaid thought bubble or distant news ticker showing abstract symbols related to 'war' and 'law'. A single empty chair opposite the desk suggests an upcoming 'guest'.",
+    "story_M": {
+      "de": "Leo ist zu Hause. Es ist relativ ruhig, aber sein Nachbar ist laut. Leo hat einen Schmerz in seinem Fuß. Er muss wichtige Daten für sein Projekt sammeln. Das ist schwierig für ihn. Er denkt an den Krieg in der Welt, das macht ihn traurig. Heute kommt ein Gast zu ihm. Der Gast möchte über das Gesetz sprechen. Die Aussage des Gastes ist wichtig. Leo muss seinen Tag gut planen.",
+      "en": "Leo is at home. It is relatively quiet, but his neighbor is loud. Leo has a pain in his foot. He has to collect important data for his project. That is difficult for him. He thinks about the war in the world; that makes him sad. Today a guest is coming to him. The guest wants to talk about the law. The guest's statement is important. Leo has to plan his day well."
+    },
+    "story_F": {
+      "de": "Mia ist zu Hause. Es ist relativ ruhig, aber ihre Nachbarin ist laut. Mia hat einen Schmerz in ihrem Fuß. Sie muss wichtige Daten für ihr Projekt sammeln. Das ist schwierig für sie. Sie denkt an den Krieg in der Welt, das macht sie traurig. Heute kommt ein Gast zu ihr. Der Gast möchte über das Gesetz sprechen. Die Aussage des Gastes ist wichtig. Mia muss ihren Tag gut planen.",
+      "en": "Mia is at home. It is relatively quiet, but her neighbor is loud. Mia has a pain in her foot. She has to collect important data for her project. That is difficult for her. She thinks about the war in the world; that makes her sad. Today a guest is coming to her. The guest wants to talk about the law. The guest's statement is important. Mia has to plan her day well."
+    }
+  },
+  {
+    "level": 1,
+    "target_words": [
+      "der",
+      "und",
+      "in",
+      "sein",
+      "ein",
+      "haben",
+      "sie",
+      "werden",
+      "von",
+      "ich"
+    ],
+    "legacy_words": [],
+    "choice_a": {
+      "prompt": "Fragen Sie den Kellner.",
+      "text_m": "{{HERO}} ruft den Kellner. Er ist ein alter Mann mit einem grauen Bart. 'Ich habe ein Problem,' sagt {{HERO}}. 'Das Bier ist nicht gut. Wo kann ich ein besseres Bier haben? Und wie komme ich von hier zur Thomaskirche?' Der Kellner zuckt die Schultern. 'Ich kann Ihnen nur ein anderes Bier geben. Der Weg zur Kirche ist kompliziert, mein Herr.' {{HERO}} wird ein neues Bier haben, aber er ist nicht glücklich.",
+      "text_f": "{{HERO}} ruft den Kellner. Er ist ein alter Mann mit einem grauen Bart. 'Ich habe ein Problem,' sagt {{HERO}}. 'Das Bier ist nicht gut. Wo kann ich ein besseres Bier haben? Und wie komme ich von hier zur Thomaskirche?' Der Kellner zuckt die Schultern. 'Ich kann Ihnen nur ein anderes Bier geben. Der Weg zur Kirche ist kompliziert, meine Dame.' {{HERO}} wird ein neues Bier haben, aber sie ist nicht glücklich.",
+      "en": "{{HERO}} calls the waiter. He is an old man with a grey beard. 'I have a problem,' says {{HERO}}. 'The beer is not good. Where can I have a better beer? And how do I get from here to Thomaskirche?' The waiter shrugs. 'I can only give you another beer. The way to the church is complicated, my sir/madam.' {{HERO}} will have a new beer, but he/she is not happy.",
+      "image_prompt": "A dimly lit, smoky traditional German pub, Auerbachs Keller. A frustrated male/female traveler, named {{HERO}}, sits at a rustic wooden table with a half-full beer stein. An elderly waiter with a grey beard, wearing a traditional apron, stands beside them, shrugging with a nonchalant expression. The air is thick with smoke, and old wooden beams are visible."
+    },
+    "choice_b": {
+      "prompt": "Verlassen Sie den Keller.",
+      "text_m": "{{HERO}} beschließt, den Keller zu verlassen. Draußen ist die Luft frisch und klar. Er ist jetzt in einer dunklen Gasse. 'Ich muss einen Weg von hier finden,' denkt {{HERO}}. Er hat eine Karte in seinem Rucksack, aber er will sie jetzt nicht haben. Wo ist die Thomaskirche? Er muss sie finden. Sein Weg wird schwierig sein, aber er ist bereit.",
+      "text_f": "{{HERO}} beschließt, den Keller zu verlassen. Draußen ist die Luft frisch und klar. Sie ist jetzt in einer dunklen Gasse. 'Ich muss einen Weg von hier finden,' denkt {{HERO}}. Sie hat eine Karte in ihrem Rucksack, aber sie will sie jetzt nicht haben. Wo ist die Thomaskirche? Sie muss sie finden. Ihr Weg wird schwierig sein, aber sie ist bereit.",
+      "en": "{{HERO}} decides to leave the cellar. Outside, the air is fresh and clear. He/She is now in a dark alley. 'I must find a way from here,' thinks {{HERO}}. He/She has a map in his/her backpack, but he/she doesn't want to have it out now. Where is the Thomaskirche? He/She must find it. His/Her path will be difficult, but he/she is ready.",
+      "image_prompt": "A narrow, cobblestone alley in an old German city at dusk, slightly misty. On one side, a heavy, dark wooden door with an ornate, faded sign 'Auerbachs Keller' is ajar. A determined male/female traveler, named {{HERO}}, stands in the alley, looking up towards a dimly lit street, adjusting a small backpack. The air is cool and clear, with old historic buildings lining the street."
+    }
+  }
+]

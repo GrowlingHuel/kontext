@@ -1,0 +1,32 @@
+[
+  {
+    "level": 1,
+    "target_words": [
+      "der",
+      "und",
+      "in",
+      "sein",
+      "ein",
+      "haben",
+      "sie",
+      "werden",
+      "von",
+      "ich"
+    ],
+    "legacy_words": [],
+    "choice_a": {
+      "prompt": "You decide the beer is undrinkable and stand up to leave Auerbachs Keller.",
+      "text_m": "Das Bier schmeckt nach Eisen, ich muss hier raus. Ein alter Mann in der Ecke schaut mich an. Ich werden ein besseres Getränk finden, und von hier weg sein. Vielleicht hat der Weg zur Thomaskirche ein Geheimnis.",
+      "text_f": "Das Bier schmeckt nach Eisen, ich muss hier raus. Eine alte Frau in der Ecke schaut mich an. Ich werden ein besseres Getränk finden, und von hier weg sein. Vielleicht hat der Weg zur Thomaskirche ein Geheimnis.",
+      "en": "The beer tastes like iron, I must get out of here. An old man/woman in the corner looks at me. I will find a better drink and be away from here. Perhaps the path to Thomaskirche holds a secret.",
+      "image_prompt": "A dimly lit, smoky, traditional German beer cellar. A male/female protagonist, looking determined, pushes away from a sturdy wooden table, leaving a half-full mug of beer. In the background, an old figure subtly watches from the shadows near the exit. The air is thick with history and smoke."
+    },
+    "choice_b": {
+      "prompt": "You decide to investigate the strange taste and the cellar's history before leaving.",
+      "text_m": "Das Bier ist seltsam, ich muss ein tieferes Verständnis haben. In dieser dunklen Stube werden der alte Keller Geschichten von Leipzig sein. Sie erzählen, dass ein Hinweis zur Thomaskirche und sein Geheimnis hier zu finden ist.",
+      "text_f": "Das Bier ist seltsam, ich muss ein tieferes Verständnis haben. In dieser dunklen Stube werden der alte Keller Geschichten von Leipzig sein. Sie erzählen, dass ein Hinweis zur Thomaskirche und sein Geheimnis hier zu finden ist.",
+      "en": "The beer is strange, I must have a deeper understanding. In this dark room, the old cellar will be full of stories of Leipzig. They say that a clue to Thomaskirche and its secret can be found here.",
+      "image_prompt": "A close-up of a male/female protagonist in a dimly lit, smoky German beer cellar, intently scrutinizing the details of their surroundings. Their hand might be resting on a worn wooden table, or they could be examining an ancient carving on the wall. A half-finished mug of beer sits nearby. The atmosphere is one of focused curiosity and a search for hidden meaning."
+    }
+  }
+]

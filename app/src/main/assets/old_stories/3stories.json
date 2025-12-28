@@ -1,0 +1,32 @@
+[
+  {
+    "level": 1,
+    "target_words": [
+      "der",
+      "und",
+      "in",
+      "sein",
+      "ein",
+      "haben",
+      "sie",
+      "werden",
+      "von",
+      "ich"
+    ],
+    "legacy_words": [],
+    "choice_a": {
+      "prompt": "Du sprichst den Kellner auf den seltsamen Geschmack an. (You ask the waiter about the strange taste.)",
+      "text_m": "Das Bier schmeckt nach Eisen. Ich spreche den Kellner an. 'Warum schmeckt es so, Herr Kellner?' Er hat ein nachdenkliches Gesicht. 'Viele sagen, das Wasser in der Thomaskirche hat einen besonderen Einfluss. Vielleicht ist es von dort.' Ich werde dorthin gehen müssen. Das muss ich wissen, was dort ist.",
+      "text_f": "Das Bier schmeckt nach Eisen. Ich spreche den Kellner an. 'Warum schmeckt es so, Herr Kellner?' Er hat ein nachdenkliches Gesicht. 'Viele sagen, das Wasser in der Thomaskirche hat einen besonderen Einfluss. Vielleicht ist es von dort.' Ich werde dorthin gehen müssen. Das muss ich wissen, was dort ist.",
+      "en": "The beer tastes like iron. I ask the waiter, 'Why does it taste like this, Mr. Waiter?' He has a thoughtful expression. 'Many say the water in the Thomaskirche has a special influence. Perhaps it is from there.' I will have to go there. I must find out what is there.",
+      "image_prompt": "A confused male/female customer, holding a beer glass with a strange taste, while a thoughtful waiter in a smoky, traditional German tavern shrugs, pointing vaguely towards a distant, unseen church."
+    },
+    "choice_b": {
+      "prompt": "Du entscheidest, den Keller zu verlassen. (You decide to leave the cellar.)",
+      "text_m": "Das Bier ist unerträglich. Ich kann es nicht trinken. Ich muss frische Luft haben. Ich stehe auf und gehe aus dem dunklen Keller, von dem ich genug habe. Draußen ist die Stadt laut. Ich sehe ein hohes Gebäude in der Ferne, die Thomaskirche. Es wird ein guter Ort sein, um Ruhe zu finden und über das Bier nachzudenken.",
+      "text_f": "Das Bier ist unerträglich. Ich kann es nicht trinken. Ich muss frische Luft haben. Ich stehe auf und gehe aus dem dunklen Keller, von dem ich genug habe. Draußen ist die Stadt laut. Ich sehe ein hohes Gebäude in der Ferne, die Thomaskirche. Es wird ein guter Ort sein, um Ruhe zu finden und über das Bier nachzudenken.",
+      "en": "The beer is unbearable. I cannot drink it. I must have fresh air. I stand up and leave the dark cellar, of which I have had enough. Outside, the city is loud. I see a tall building in the distance, the Thomaskirche. It will be a good place to find peace and think about the beer.",
+      "image_prompt": "A pale male/female character, looking unwell, walks out of a smoky, dimly lit German beer cellar into a bustling, bright city street, their gaze fixed on a prominent, tall church spire (Thomaskirche) in the distance."
+    }
+  }
+]
