@@ -1,5 +1,6 @@
 package com.kontext.data.repository
 
+import com.kontext.data.local.SessionManager
 import com.kontext.data.local.dao.VocabCardDao
 import com.kontext.data.local.entity.VocabCard
 import javax.inject.Inject
@@ -7,8 +8,8 @@ import javax.inject.Singleton
 
 @Singleton
 class VocabRepositoryImpl @Inject constructor(
-    private val dao: VocabCardDao
-    // Supabase client can be injected here later
+    private val dao: VocabCardDao,
+    private val sessionManager: SessionManager
 ) : VocabRepository {
     
     override suspend fun getCount(): Int {
@@ -16,13 +17,13 @@ class VocabRepositoryImpl @Inject constructor(
     }
     
     override suspend fun getCardsForReview(): List<VocabCard> {
-        val userId = "local_user" // Hardcoded for now, should come from SessionManager
+        val userId = sessionManager.getCurrentUserId()
         val now = System.currentTimeMillis()
         return dao.getCardsDueForUser(userId, now)
     }
 
     override suspend fun getRandomCards(limit: Int): List<VocabCard> {
-        val userId = "local_user"
+        val userId = sessionManager.getCurrentUserId()
         return dao.getRandomCards(userId, limit)
     }
 

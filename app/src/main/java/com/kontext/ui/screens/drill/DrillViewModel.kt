@@ -4,7 +4,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.kontext.data.local.entity.VocabCard
 import com.kontext.data.repository.VocabRepository
-import com.kontext.domain.algorithm.SpacedRepetitionEngine
+import com.kontext.domain.usecase.GetNextReviewCardUseCase
+import com.kontext.domain.usecase.UpdateCardMasteryUseCase
 import com.kontext.util.SeedManager
 import com.kontext.util.TtsManager
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -30,8 +31,9 @@ sealed class DrillUiState {
 
 @HiltViewModel
 class DrillViewModel @Inject constructor(
-    private val repository: VocabRepository,
-    private val algorithm: SpacedRepetitionEngine, // Renamed to match usage
+    private val repository: VocabRepository, // Kept for count/basic info if needed, but ideally UseCase too
+    private val getNextReviewCardUseCase: GetNextReviewCardUseCase,
+    private val updateCardMasteryUseCase: UpdateCardMasteryUseCase,
     private val seedManager: SeedManager,
     private val ttsManager: TtsManager
 ) : ViewModel() {
@@ -60,7 +62,7 @@ class DrillViewModel @Inject constructor(
             
             // basic stats
             totalCardsCount = repository.getCount()
-            val dueCards = repository.getCardsForReview()
+            val dueCards = getNextReviewCardUseCase()
             sessionQueue.clear()
             sessionQueue.addAll(dueCards)
 
@@ -95,24 +97,9 @@ class DrillViewModel @Inject constructor(
         if (currentState is DrillUiState.Review) {
             val card = currentState.currentCard
             
-            // Calculate new schedule
-            val result = algorithm.calculateNextReview(
-                currentLevel = card.masteryLevel,
-                rating = rating,
-                lastReview = card.lastReviewedAt ?: 0L
-            )
-
-            // Update card object
-            val updatedCard = card.copy(
-                masteryLevel = result.newLevel,
-                nextReviewTimestamp = result.nextReviewTimestamp,
-                reviewCount = card.reviewCount + 1,
-                lastReviewedAt = System.currentTimeMillis()
-            )
-
             viewModelScope.launch {
-                // Persist update
-                repository.updateCard(updatedCard)
+                // Use Case handles logic + persistence
+                updateCardMasteryUseCase(card, rating)
                 
                 // Remove from head of queue
                 sessionQueue.removeFirst()

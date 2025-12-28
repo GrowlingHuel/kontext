@@ -4,6 +4,7 @@ import android.content.Context
 import android.util.Log
 import com.kontext.R
 import com.kontext.data.local.KontextDatabase
+import com.kontext.data.local.SessionManager
 import com.kontext.data.local.entity.VocabCard
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -16,7 +17,8 @@ import javax.inject.Singleton
 @Singleton
 class SeedManager @Inject constructor(
     private val database: KontextDatabase,
-    private val context: Context
+    private val context: Context,
+    private val sessionManager: SessionManager
 ) {
     private val prefs = context.getSharedPreferences("kontext_prefs", Context.MODE_PRIVATE)
 
@@ -58,6 +60,7 @@ class SeedManager @Inject constructor(
     private fun parseCsv(inputStream: InputStream): List<VocabCard> {
         val cards = mutableListOf<VocabCard>()
         val reader = BufferedReader(InputStreamReader(inputStream))
+        val currentUserId = sessionManager.getCurrentUserId()
         try {
             var line = reader.readLine()
             
@@ -78,7 +81,7 @@ class SeedManager @Inject constructor(
                             exampleSentenceGerman = parts[2].trim(),
                             exampleSentenceEnglish = parts[3].trim(),
                             nextReviewTimestamp = System.currentTimeMillis(),
-                            userId = "local_user" // Default for now
+                            userId = currentUserId
                         )
                     )
                 }

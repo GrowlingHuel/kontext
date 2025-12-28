@@ -15,6 +15,6 @@ abstract class AlgorithmModule {
     @Binds
     @Singleton
     abstract fun bindSpacedRepetitionEngine(
-        algorithm: SM2Algorithm
+        impl: SM2Algorithm
     ): SpacedRepetitionEngine
 }
