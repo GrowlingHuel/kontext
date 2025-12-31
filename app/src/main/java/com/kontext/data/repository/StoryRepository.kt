@@ -1,9 +1,7 @@
 package com.kontext.data.repository
 
 import android.graphics.Bitmap
-import com.kontext.data.local.entity.StoryEntity
-import kotlinx.coroutines.flow.Flow
-import kotlinx.serialization.Serializable
+import com.kontext.util.Result
 
 data class StorySentence(
     val de: String,
@@ -17,6 +15,5 @@ data class StoryResponse(
 )
 
 interface StoryRepository {
-    suspend fun generateStory(vocabList: List<String>): StoryResponse
-    fun getHistory(): Flow<List<StoryEntity>>
+    suspend fun generateStory(vocabList: List<String>): Result<StoryResponse>
 }

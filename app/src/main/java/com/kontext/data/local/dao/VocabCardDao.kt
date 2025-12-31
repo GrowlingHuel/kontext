@@ -29,7 +29,11 @@ interface VocabCardDao {
     @Query("DELETE FROM vocab_cards")
     suspend fun deleteAll()
 
-    @Query("SELECT english_term FROM vocab_cards WHERE LOWER(german_term) LIKE '%' || :germanTerm || '%' LIMIT 1")
-    suspend fun findEnglishForGerman(germanTerm: String): String?
-
+    // Updated query to use new column names
+    @Query("SELECT native_language_term FROM vocab_cards WHERE LOWER(target_language_term) LIKE '%' || :targetTerm || '%' LIMIT 1")
+    suspend fun findNativeForTarget(targetTerm: String): String?
+    
+    // Deprecated method for backward compatibility - delegates to new method
+    @Deprecated("Use findNativeForTarget", ReplaceWith("findNativeForTarget(germanTerm)"))
+    suspend fun findEnglishForGerman(germanTerm: String): String? = findNativeForTarget(germanTerm)
 }

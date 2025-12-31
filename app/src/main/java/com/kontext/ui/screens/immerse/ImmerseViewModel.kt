@@ -4,19 +4,15 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.kontext.data.local.FileStorageHelper
 import com.kontext.data.repository.StoryRepository
 import com.kontext.data.repository.VocabRepository
 import com.kontext.data.repository.StorySentence
-import com.kontext.data.local.entity.StoryEntity
+import com.kontext.util.Result
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.SharingStarted
-import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 import android.graphics.Bitmap
 import com.kontext.data.repository.StoryResponse
-import org.json.JSONObject
 
 sealed class ImmerseUiState {
     object Initial : ImmerseUiState()
@@ -32,15 +28,11 @@ sealed class ImmerseUiState {
 @HiltViewModel
 class ImmerseViewModel @Inject constructor(
     private val vocabRepository: VocabRepository,
-    private val storyRepository: StoryRepository,
-    private val fileStorageHelper: FileStorageHelper
+    private val storyRepository: StoryRepository
 ) : ViewModel() {
 
     private val _uiState = mutableStateOf<ImmerseUiState>(ImmerseUiState.Initial)
     val uiState: State<ImmerseUiState> = _uiState
-
-    val history = storyRepository.getHistory()
-        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
 
     fun generateStory() {
         viewModelScope.launch {
@@ -53,12 +45,25 @@ class ImmerseViewModel @Inject constructor(
                     return@launch
                 }
 
-                val words = cards.map { it.germanTerm }
+                val words = cards.map { it.targetLanguageTerm }
                 
-                // Repo handles generation AND caching AND image generation now
-                val storyResponse = storyRepository.generateStory(words)
-                
-                _uiState.value = ImmerseUiState.Success(storyResponse.sentences, storyResponse.image)
+                // Handle Result type from repository
+                when (val result = storyRepository.generateStory(words)) {
+                    is Result.Success -> {
+                        _uiState.value = ImmerseUiState.Success(
+                            result.data.sentences, 
+                            result.data.image
+                        )
+                    }
+                    is Result.Error -> {
+                        _uiState.value = ImmerseUiState.Error(
+                            "Failed to generate story: ${result.message}"
+                        )
+                    }
+                    Result.Loading -> {
+                        // Already in loading state
+                    }
+                }
                 
             } catch (e: Exception) {
                 _uiState.value = ImmerseUiState.Error("Failed to generate story: ${e.message}")
@@ -66,34 +71,7 @@ class ImmerseViewModel @Inject constructor(
         }
     }
 
-    fun loadStoryFromLibrary(entity: StoryEntity) {
-        viewModelScope.launch {
-            _uiState.value = ImmerseUiState.Loading("Loading from library...")
-            try {
-                val image = fileStorageHelper.loadBitmapFromPath(entity.imagePath)
-                
-                // Parse JSON
-                val jsonObject = JSONObject(entity.jsonContent)
-                val jsonSentences = jsonObject.optJSONArray("sentences")
-                val sentences = mutableListOf<StorySentence>()
-                if (jsonSentences != null) {
-                    for (i in 0 until jsonSentences.length()) {
-                        val item = jsonSentences.getJSONObject(i)
-                        sentences.add(
-                            StorySentence(
-                                de = item.optString("de", ""),
-                                en = item.optString("en", "")
-                            )
-                        )
-                    }
-                }
-
-                _uiState.value = ImmerseUiState.Success(sentences, image)
-            } catch (e: Exception) {
-                _uiState.value = ImmerseUiState.Error("Failed to load story: ${e.message}")
-            }
-        }
-    }
+    // Story library feature removed for MVP - caching disabled
 
     val toastMessage = mutableStateOf<String?>(null)
 

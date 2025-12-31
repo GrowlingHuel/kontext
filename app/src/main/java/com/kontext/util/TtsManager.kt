@@ -3,6 +3,7 @@ package com.kontext.util
 import android.content.Context
 import android.speech.tts.TextToSpeech
 import android.util.Log
+import com.kontext.domain.model.LanguageConfig
 import dagger.hilt.android.qualifiers.ApplicationContext
 import java.util.Locale
 import javax.inject.Inject
@@ -10,7 +11,8 @@ import javax.inject.Singleton
 
 @Singleton
 class TtsManager @Inject constructor(
-    @ApplicationContext private val context: Context
+    @ApplicationContext private val context: Context,
+    private val languageConfig: LanguageConfig
 ) : TextToSpeech.OnInitListener {
 
     private var tts: TextToSpeech? = null
@@ -22,14 +24,23 @@ class TtsManager @Inject constructor(
 
     override fun onInit(status: Int) {
         if (status == TextToSpeech.SUCCESS) {
-            val result = tts?.setLanguage(Locale.GERMAN)
+            val locale = languageConfig.targetLanguage.locale
+            val result = tts?.setLanguage(locale)
+            
             if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-                Log.e("TtsManager", "German language is not supported or missing data")
+                Log.e(
+                    "TtsManager", 
+                    "${languageConfig.targetLanguage.displayName} language not supported or missing data"
+                )
             } else {
                 isInitialized = true
+                Log.d(
+                    "TtsManager", 
+                    "TTS initialized for ${languageConfig.targetLanguage.displayName}"
+                )
             }
         } else {
-            Log.e("TtsManager", "Initialization failed")
+            Log.e("TtsManager", "TTS initialization failed")
         }
     }
 
@@ -37,7 +48,10 @@ class TtsManager @Inject constructor(
         if (isInitialized) {
             tts?.speak(text, TextToSpeech.QUEUE_FLUSH, null, null)
         } else {
-            Log.w("TtsManager", "TTS not initialized yet")
+            Log.w(
+                "TtsManager", 
+                "TTS not initialized for ${languageConfig.targetLanguage.displayName}"
+            )
         }
     }
 

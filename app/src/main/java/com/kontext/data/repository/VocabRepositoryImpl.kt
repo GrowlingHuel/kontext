@@ -32,6 +32,6 @@ class VocabRepositoryImpl @Inject constructor(
     }
 
     override suspend fun findEnglishForGerman(germanTerm: String): String? {
-        return dao.findEnglishForGerman(germanTerm)
+        return dao.findNativeForTarget(germanTerm)
     }
 }

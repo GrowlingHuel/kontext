@@ -53,7 +53,10 @@ def read_vocab(filepath):
         for row in reader:
             if 'german' in row and row['german']:
                 words.append(row['german'])
-    return words
+    
+    # Task 1: The Lexical Bottleneck
+    # Limit to the top 2,000 words.
+    return words[:2000]
 
 def get_anchor_words(all_words):
     # Top 100 words (70% weight logic in prompt availability)
@@ -78,6 +81,9 @@ def create_story_cache(client, bible_data, anchor_words):
     
     **The World (Narrative Bible):**
     {bible_str}
+
+    **Constraint:**
+    You are now restricted to a 2,000-word vocabulary. Use ONLY these common words to describe the complex surrealist scenes from the Narrative Bible.
     
     **Anchor Vocabulary (Top 100):**
     [{anchors_str}]
@@ -142,6 +148,9 @@ def generate_cyoa_content(client, level, new_words, legacy_words, cache_name, mo
     **Location:** {context['location']}
     **Vibe:** {context['vibe']} (Interpret as Magritte-style surrealism)
     **Bottleneck Destination:** {context['destination']}
+
+    **Constraint:**
+    You are now restricted to a 2,000-word vocabulary. Use ONLY these common words to describe the complex surrealist scenes from the Narrative Bible.
     
     **Target Vocabulary (Must Use):** [{words_combined_str}]
     

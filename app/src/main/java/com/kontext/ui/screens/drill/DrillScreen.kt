@@ -125,7 +125,7 @@ fun FlashCard(
     // Auto-play word on flip (User request: less overwhelming)
     LaunchedEffect(isFlipped) {
         if (isFlipped) {
-            onPlayAudio(card.germanTerm)
+            onPlayAudio(card.targetLanguageTerm)
         }
     }
 
@@ -150,11 +150,11 @@ fun FlashCard(
                     horizontalArrangement = Arrangement.Center
                 ) {
                     Text(
-                        text = card.germanTerm,
+                        text = card.targetLanguageTerm,
                         style = MaterialTheme.typography.displayMedium,
                         textAlign = TextAlign.Center
                     )
-                    IconButton(onClick = { onPlayAudio(card.germanTerm) }) {
+                    IconButton(onClick = { onPlayAudio(card.targetLanguageTerm) }) {
                         Icon(
                             imageVector = Icons.Default.VolumeUp,
                             contentDescription = "Play Term Audio"
@@ -169,13 +169,13 @@ fun FlashCard(
                     horizontalArrangement = Arrangement.Center
                 ) {
                     Text(
-                        text = card.exampleSentenceGerman,
+                        text = card.exampleSentenceTarget,
                         style = MaterialTheme.typography.bodyLarge,
                         fontStyle = androidx.compose.ui.text.font.FontStyle.Italic,
                         textAlign = TextAlign.Center,
                         modifier = Modifier.weight(1f, fill = false)
                     )
-                    IconButton(onClick = { onPlayAudio(card.exampleSentenceGerman) }) {
+                    IconButton(onClick = { onPlayAudio(card.exampleSentenceTarget) }) {
                         Icon(
                             imageVector = Icons.Default.VolumeUp,
                             contentDescription = "Play Sentence Audio"
@@ -194,14 +194,14 @@ fun FlashCard(
                     
                     // Back (English)
                     Text(
-                        text = card.englishTerm,
+                        text = card.nativeLanguageTerm,
                         style = MaterialTheme.typography.headlineSmall,
                         color = MaterialTheme.colorScheme.primary,
                         textAlign = TextAlign.Center
                     )
                     Spacer(modifier = Modifier.height(8.dp))
                     Text(
-                        text = card.exampleSentenceEnglish,
+                        text = card.exampleSentenceNative,
                         style = MaterialTheme.typography.bodyMedium,
                         textAlign = TextAlign.Center
                     )

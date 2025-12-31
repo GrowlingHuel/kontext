@@ -27,6 +27,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.kontext.data.local.SessionManager
 
 @Composable
 fun ProfileScreen(
@@ -62,11 +63,96 @@ fun ProfileScreen(
 
 @Composable
 fun AuthenticatedContent(email: String, onSignOut: () -> Unit) {
+    val sessionManager: SessionManager = hiltViewModel<ProfileViewModel>().sessionManager
+    val currentLanguageCode = remember { sessionManager.getLanguageCode() }
+    var selectedLanguageCode by remember { mutableStateOf(currentLanguageCode) }
+    var showRestartPrompt by remember { mutableStateOf(false) }
+    
     Text("Welcome,", style = MaterialTheme.typography.headlineSmall)
     Text(email, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.primary)
+    
+    Spacer(modifier = Modifier.height(32.dp))
+    
+    // Language Selection Section
+    Text("Learning Language", style = MaterialTheme.typography.titleMedium)
+    Spacer(modifier = Modifier.height(8.dp))
+    
+    Column(modifier = Modifier.fillMaxWidth()) {
+        LanguageOption(
+            languageCode = "de",
+            languageName = "German",
+            isSelected = selectedLanguageCode == "de",
+            onClick = {
+                selectedLanguageCode = "de"
+                sessionManager.setLanguageCode("de")
+                showRestartPrompt = true
+            }
+        )
+        LanguageOption(
+            languageCode = "es",
+            languageName = "Spanish",
+            isSelected = selectedLanguageCode == "es",
+            onClick = {
+                selectedLanguageCode = "es"
+                sessionManager.setLanguageCode("es")
+                showRestartPrompt = true
+            }
+        )
+        LanguageOption(
+            languageCode = "fr",
+            languageName = "French",
+            isSelected = selectedLanguageCode == "fr",
+            onClick = {
+                selectedLanguageCode = "fr"
+                sessionManager.setLanguageCode("fr")
+                showRestartPrompt = true
+            }
+        )
+    }
+    
+    if (showRestartPrompt) {
+        Spacer(modifier = Modifier.height(16.dp))
+        Text(
+            "⚠️ Please restart the app for language change to take effect",
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.error
+        )
+    }
+    
     Spacer(modifier = Modifier.height(32.dp))
     Button(onClick = onSignOut) {
         Text("Sign Out")
+    }
+}
+
+@Composable
+fun LanguageOption(
+    languageCode: String,
+    languageName: String,
+    isSelected: Boolean,
+    onClick: () -> Unit
+) {
+    Button(
+        onClick = onClick,
+        modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
+        colors = if (isSelected) {
+            ButtonDefaults.buttonColors(
+                containerColor = MaterialTheme.colorScheme.primary
+            )
+        } else {
+            ButtonDefaults.buttonColors(
+                containerColor = MaterialTheme.colorScheme.surfaceVariant
+            )
+        }
+    ) {
+        Text(
+            text = "$languageName ($languageCode)",
+            color = if (isSelected) {
+                MaterialTheme.colorScheme.onPrimary
+            } else {
+                MaterialTheme.colorScheme.onSurfaceVariant
+            }
+        )
     }
 }
 

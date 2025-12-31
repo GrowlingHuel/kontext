@@ -2,18 +2,19 @@ package com.kontext.ui.story
 
 import android.content.Context
 import android.graphics.BitmapFactory
-import android.speech.tts.TextToSpeech
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material.icons.filled.Stop
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -23,35 +24,24 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.kontext.data.local.StoryLoader
-import com.kontext.domain.model.StoryLevel
-import com.kontext.domain.model.UserGender
 import java.util.Locale
 
 @Composable
 fun StoryScreen(
     storyLoader: StoryLoader,
+    currentlyPlayingIndex: Int,
+    isAutoPlaying: Boolean,
+    lastFinishedUtteranceId: String? = null,
+    onPlayAudio: (String, Int) -> Unit,
+    onToggleAutoPlay: (Boolean) -> Unit,
+    onStopAudio: () -> Unit,
+    onAutoPlayNext: (Int, String) -> Unit,
     onFinished: () -> Unit
 ) {
     val context = LocalContext.current
-    var tts by remember { mutableStateOf<TextToSpeech?>(null) }
-
-    // Initialize TTS
-    DisposableEffect(context) {
-        val ttsInstance = TextToSpeech(context) { status ->
-            if (status == TextToSpeech.SUCCESS) {
-                tts?.language = Locale.GERMAN
-            }
-        }
-        tts = ttsInstance
-        onDispose {
-            ttsInstance.shutdown()
-        }
-    }
-
     val prefs = remember { context.getSharedPreferences("app_prefs", Context.MODE_PRIVATE) }
-    
+
     // Load saved level (Default to 0: Prologue)
     val savedLevel = remember { prefs.getInt("last_level", 0) }
     
@@ -65,23 +55,11 @@ fun StoryScreen(
             .putInt("last_level", currentLevelIndex)
             .putString("last_choice", lastChoiceSide)
             .apply()
+        
+        onStopAudio()
     }
 
     val stories = remember { storyLoader.loadStories(context) } 
-    
-    // Logging for Debugging
-    LaunchedEffect(currentLevelIndex, lastChoiceSide) {
-        android.util.Log.d("StoryFlow", "Loading Level: $currentLevelIndex, Last Choice: $lastChoiceSide")
-    }
-
-    // TTS Safety Wrapper
-    val safeExample = { text: String ->
-        if (tts != null) {
-             tts?.speak(text, TextToSpeech.QUEUE_FLUSH, null, null)
-        } else {
-             android.util.Log.w("StoryFlow", "TTS not initialized")
-        }
-    }
 
     Column(modifier = Modifier.fillMaxSize()) {
         
@@ -94,7 +72,6 @@ fun StoryScreen(
                     .padding(16.dp),
                 contentAlignment = Alignment.Center
             ) {
-                // Placeholder image or Text
                 Text("PROLOGUE", style = MaterialTheme.typography.headlineLarge)
             }
             
@@ -116,7 +93,6 @@ fun StoryScreen(
                 
                 Spacer(modifier = Modifier.weight(1f))
                 
-                // Prologue Choices -> Level 1
                  if (stories.isNotEmpty()) {
                     val firstLevel = stories[0]
                     Text("What do you do?", style = MaterialTheme.typography.titleMedium)
@@ -134,18 +110,31 @@ fun StoryScreen(
 
         } else {
             // STORY CONTENT (Level 1+)
-            // Map LevelIndex 1 -> Stories Index 0
             val storyIndex = currentLevelIndex - 1
             val currentLevel = stories.getOrNull(storyIndex)
             
             if (currentLevel != null) {
                 val currentChoiceData = if (lastChoiceSide == "A") currentLevel.choiceA else currentLevel.choiceB
                 
-                // User Gender Logic
-                val prefs = context.getSharedPreferences("app_prefs", Context.MODE_PRIVATE)
                 val genderStr = prefs.getString("user_gender", "MALE")
                 val sentences = if (genderStr == "FEMALE") currentChoiceData.sentencesF else currentChoiceData.sentencesM
                 val enSentences = currentChoiceData.sentencesEn
+                
+                // Auto-Progress Logic
+                // We watch 'lastFinishedUtteranceId' which comes from Activity
+                LaunchedEffect(lastFinishedUtteranceId) {
+                    val id = lastFinishedUtteranceId?.toIntOrNull()
+                    if (id != null) {
+                         // Calculate next
+                         val nextIndex = id + 1
+                         if (nextIndex < sentences.size) {
+                             onAutoPlayNext(nextIndex, sentences[nextIndex])
+                         } else {
+                             // Done with all
+                             onToggleAutoPlay(false)
+                         }
+                    }
+                }
 
                 // Image Loading
                 val imageBitmap = remember(currentLevel.level, lastChoiceSide) {
@@ -172,9 +161,8 @@ fun StoryScreen(
                     Box(modifier = Modifier.weight(0.4f).fillMaxWidth(), contentAlignment = Alignment.Center) { Text("Image Missing") }
                 }
 
-                val listState = rememberLazyListState() // Restored
+                val listState = rememberLazyListState() 
                 
-                // Logic: Show choices only when at end of list
                 val isAtEnd by remember {
                     derivedStateOf {
                         val layoutInfo = listState.layoutInfo
@@ -183,10 +171,39 @@ fun StoryScreen(
                             false
                         } else {
                             val lastVisibleItem = visibleItemsInfo.last()
-                            // If last visible item is the last index in data (totalItems - 1)
                             lastVisibleItem.index == layoutInfo.totalItemsCount - 1
                         }
                     }
+                }
+                
+                // Read All / Stop Button Header
+                Row(
+                    modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp),
+                    horizontalArrangement = Arrangement.End
+                ) {
+                   if (isAutoPlaying) {
+                        Button(
+                            onClick = { onToggleAutoPlay(false) },
+                             colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error)
+                        ) {
+                            Icon(Icons.Default.Stop, contentDescription = null)
+                            Spacer(Modifier.width(4.dp))
+                            Text("Stop Reading")
+                        }
+                   } else {
+                       Button(
+                            onClick = { 
+                                onToggleAutoPlay(true)
+                                if (sentences.isNotEmpty()) {
+                                    onPlayAudio(sentences[0], 0)
+                                }
+                            }
+                        ) {
+                            Icon(Icons.Default.PlayArrow, contentDescription = null)
+                            Spacer(Modifier.width(4.dp))
+                            Text("Read All")
+                        }
+                   }
                 }
 
                 LazyColumn(
@@ -199,10 +216,18 @@ fun StoryScreen(
                 ) {
                     itemsIndexed(sentences) { index, deText ->
                          val enText = enSentences.getOrElse(index) { "" }
-                         SentenceItem(deText, enText) { safeExample(deText) }
+                         val isPlaying = index == currentlyPlayingIndex
+                         
+                         SentenceItem(
+                             germanText = deText,
+                             englishText = enText,
+                             isPlaying = isPlaying, 
+                             onPlay = { 
+                                 onPlayAudio(deText, index) 
+                             }
+                         )
                     }
                     
-                    // NEXT LEVEL CHOICES (Visible only when scrolled to end)
                     item {
                         Spacer(modifier = Modifier.height(24.dp))
                         
@@ -230,7 +255,6 @@ fun StoryScreen(
                     }
                 }
             } else {
-                 // Error or End
                  Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { Text("Story Ended") }
             }
         }
@@ -241,17 +265,23 @@ fun StoryScreen(
 fun SentenceItem(
     germanText: String,
     englishText: String,
+    isPlaying: Boolean,
     onPlay: () -> Unit
 ) {
     var showEnglish by remember { mutableStateOf(false) }
+
+    val borderColor = if (isPlaying) MaterialTheme.colorScheme.primary else androidx.compose.ui.graphics.Color.Transparent
+    val borderWidth = if (isPlaying) 2.dp else 0.dp
 
     Card(
         modifier = Modifier
             .fillMaxWidth()
             .padding(vertical = 4.dp)
+            .border(borderWidth, borderColor, RoundedCornerShape(12.dp))
             .clickable { showEnglish = !showEnglish },
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant),
+        shape = RoundedCornerShape(12.dp)
     ) {
         Column(modifier = Modifier.padding(12.dp)) {
             Row(
@@ -266,7 +296,7 @@ fun SentenceItem(
                 )
                 IconButton(onClick = onPlay) {
                     Icon(
-                        imageVector = Icons.Default.PlayArrow,
+                        imageVector = if (isPlaying) Icons.Default.Stop else Icons.Default.PlayArrow,
                         contentDescription = "Play",
                         tint = MaterialTheme.colorScheme.primary
                     )

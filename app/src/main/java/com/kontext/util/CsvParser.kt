@@ -1,49 +1,61 @@
 package com.kontext.util
 
+import android.util.Log
 import com.kontext.data.local.entity.VocabCard
+import com.kontext.domain.model.LanguageConfig
 import java.io.InputStream
-import java.io.BufferedReader
-import java.io.InputStreamReader
+import javax.inject.Inject
+import javax.inject.Singleton
 
-object CsvParser {
-    fun parse(inputStream: InputStream, userId: String): List<VocabCard> {
+@Singleton
+class CsvParser @Inject constructor(
+    private val languageConfig: LanguageConfig
+) {
+    
+    fun parseVocabCsv(
+        inputStream: InputStream,
+        userId: String,
+        delimiter: String = "|"
+    ): List<VocabCard> {
         val cards = mutableListOf<VocabCard>()
-        val reader = BufferedReader(InputStreamReader(inputStream))
-        try {
-            // Skip header if present, or just assume first line is data if we can't be sure.
-            // For now, assuming standard CSV format: German,English,ExampleDE,ExampleEN
-            // Skipping header for safety if first line contains "German"
+        
+        inputStream.bufferedReader().use { reader ->
             var line = reader.readLine()
-            if (line != null && line.contains("German", ignoreCase = true)) {
+            
+            // Skip header if present
+            if (line != null && isHeaderRow(line)) {
                 line = reader.readLine()
             }
-
+            
             while (line != null) {
-                parseLine(line, userId)?.let { cards.add(it) }
+                parseVocabLine(line, userId, delimiter)?.let { cards.add(it) }
                 line = reader.readLine()
             }
-        } catch (e: Exception) {
-            e.printStackTrace()
-        } finally {
-            reader.close()
         }
+        
         return cards
     }
     
-    private fun parseLine(line: String, userId: String): VocabCard? {
-        // Simple manual CSV parsing (splitting by comma). 
-        // In a real app, use a CSV library to handle quotes/commas inside fields.
-        // Assuming clean data for tracer bullet.
-        // Using pipe | as delimiter
-        val parts = line.split("|")
-        if (parts.size < 4) return null
+    private fun isHeaderRow(line: String): Boolean {
+        return line.contains("German", ignoreCase = true) || 
+               line.contains("English", ignoreCase = true) ||
+               line.contains("Target", ignoreCase = true)
+    }
+    
+    private fun parseVocabLine(line: String, userId: String, delimiter: String): VocabCard? {
+        val parts = line.split(delimiter)
+        if (parts.size < 4) {
+            Log.w("CsvParser", "Skipping malformed CSV line: $line")
+            return null
+        }
         
+        // CSV format: TargetLanguage|NativeLanguage|ExampleTarget|ExampleNative
         return VocabCard(
-            germanTerm = parts[0].trim(),
-            englishTerm = parts[1].trim(),
-            exampleSentenceGerman = parts[2].trim(),
-            exampleSentenceEnglish = parts[3].trim(),
-            masteryLevel = 0,
+            targetLanguageTerm = parts[0].trim(),
+            nativeLanguageTerm = parts[1].trim(),
+            exampleSentenceTarget = parts[2].trim(),
+            exampleSentenceNative = parts[3].trim(),
+            languageCode = languageConfig.targetLanguage.code,
             nextReviewTimestamp = System.currentTimeMillis(),
             userId = userId
         )

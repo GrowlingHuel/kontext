@@ -8,6 +8,8 @@ import com.kontext.data.repository.StoryRepository
 import com.kontext.data.repository.StoryRepositoryImpl
 import com.kontext.data.repository.ImageRepository
 import com.kontext.data.repository.ImageRepositoryImpl
+import com.kontext.domain.usecase.StoryPromptBuilder
+import com.kontext.domain.usecase.CEFRStoryPromptBuilder
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -41,4 +43,10 @@ abstract class RepositoryModule {
     abstract fun bindImageRepository(
         imageRepositoryImpl: ImageRepositoryImpl
     ): ImageRepository
+    
+    @Binds
+    @Singleton
+    abstract fun bindStoryPromptBuilder(
+        cefrStoryPromptBuilder: CEFRStoryPromptBuilder
+    ): StoryPromptBuilder
 }
